@@ -240,27 +240,6 @@ The glyph design replaces layered cartograms to visualise multivariate data.
 
 ---
 
-<!-- ## Merits & Limitations
-
-:::: {.columns}
-::: {.column width="50%"}
-### Merits
-
-- Transparent & interpretable
-- Reduces cognitive load
-- Fosters iteration & dialogue
-:::
-::: {.column width="50%"}
-### Limitations
-
-- Need for formal evaluation
-- Model simplification
-- Scalability
-:::
-::::
-
---- -->
-
 ## Conclusion & Future Work
 
 We reframed decarbonisation planning from a [rigid, monolithic process]{.highlight-gold} into a [transparent, iterative dialogue]{.highlight-green} informed by contextual interviews with the industrial partner and client.
