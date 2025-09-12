@@ -12,6 +12,7 @@ format:
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     footer: "[danylaksono.github.io/presentations/cgvc2025/](danylaksono.github.io/presentations/cgvc2025/)"
     slide-number: c/t
     transition: slide
@@ -208,6 +209,24 @@ class D iterate;
 
 ---
 
+### T2: Author Scenarios
+
+![Compose a strategy from modular "plan components" based on the available list of green technologies, targetted at the selected buildings.](./assets/t2_authoring.gif)
+
+---
+
+### T3: Simulate and Evaluate
+
+![Instantly view the multivariate data and spatio-temporal outcomes of the plan represented as glyphs across both the map and the table.](./assets/t3_simulate.gif)
+
+---
+
+### T4: Iterate and Refine
+
+![Modify plan composition, learn from immediate visual feedback, and adjust the strategy in a dynamic dialogue with the data.](./assets/t4_iterate.gif)
+
+---
+
 ## Visualising Complex Trade-offs with Glyphs
 
 The glyph design replaces layered cartograms to visualise multivariate data. 
@@ -248,25 +267,44 @@ The glyph design replaces layered cartograms to visualise multivariate data.
 
 ## Conclusion & Future Work
 
-We reframed decarbonisation planning from a rigid, monolithic process into a transparent, flexible, and iterative dialogue.
+We reframed decarbonisation planning from a [rigid, monolithic process]{.highlight-gold} into a [transparent, iterative dialogue]{.highlight-green} informed by contextual interviews with the industrial partner and client.
 
-Based on our contextual interviews, the dashboard can be helpful 
+Future work will focus on:
 
-Future work:
-
-1. LLM-based user interface 
-2. Develop side-by-side scenario comparison
-3. Enhance simulation fidelity
+1. [LLM-based user interface]{.highlight-green} – developing a natural language interface that enables decision-makers to interact with complex models more intuitively.
+2. [Further user studies]{.highlight-green} – conducting structured evaluations with local authority planners to assess usability, trust, and decision support value.
+3. [Side-by-side scenario comparison]{.highlight-green} – enabling direct visual and quantitative comparison of alternative decarbonisation pathways to support informed trade-offs.
+4. [Scalability and generalisation]{.highlight-green} – extending the framework to other local authorities and contexts beyond the initial case study.
 
 ---
 
+
+
 ## Thank You
 
-**D. Laksono, R. Jianu, & A. Slingsby**
+<hr>
 
-**Live Demo:** <https://decarb-vis.netlify.app>
+#### D. Laksono, R. Jianu, & A. Slingsby
 
-**Source Code:** <https://github.com/danylaksono/decarbonisation-glyphmap-planner>
+<div>
+  <i class="fa-solid fa-envelope"></i> <a href="mailto:dany.laksono@city.ac.uk">dany.laksono@city.ac.uk</a>
+</div>
+<div>
+  <i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/danylaksono/">danylaksono</a>
+</div>
+
+giCentre, City St. George's, University of London.
+
+![Code repository](./assets/github_repo.png){height="150"}
+
+<!-- 
+<hr>
+
+<small>[Live Demo]{.highlight-blue}: <https://decarb-vis.netlify.app></small>
+
+<small>[Source Code]{.highlight-blue}: <https://github.com/danylaksono/decarbonisation-glyphmap-planner></small> -->
+
+
 
 ---
 

@@ -88,14 +88,14 @@
     "href": "cgvc2025/index.html#conclusion-future-work",
     "title": "Presentations",
     "section": "Conclusion & Future Work",
-    "text": "Conclusion & Future Work\nWe reframed decarbonisation planning from a rigid, monolithic process into a transparent, flexible, and iterative dialogue.\nBased on our contextual interviews, the dashboard can be helpful\nFuture work:\n\nLLM-based user interface\nDevelop side-by-side scenario comparison\nEnhance simulation fidelity"
+    "text": "Conclusion & Future Work\nWe reframed decarbonisation planning from a rigid, monolithic process into a transparent, iterative dialogue informed by contextual interviews with the industrial partner and client.\nFuture work will focus on:\n\nLLM-based user interface – developing a natural language interface that enables decision-makers to interact with complex models more intuitively.\nFurther user studies – conducting structured evaluations with local authority planners to assess usability, trust, and decision support value.\nSide-by-side scenario comparison – enabling direct visual and quantitative comparison of alternative decarbonisation pathways to support informed trade-offs.\nScalability and generalisation – extending the framework to other local authorities and contexts beyond the initial case study."
   },
   {
     "objectID": "cgvc2025/index.html#thank-you",
     "href": "cgvc2025/index.html#thank-you",
     "title": "Presentations",
     "section": "Thank You",
-    "text": "Thank You\nD. Laksono, R. Jianu, & A. Slingsby\nLive Demo: https://decarb-vis.netlify.app\nSource Code: https://github.com/danylaksono/decarbonisation-glyphmap-planner"
+    "text": "Thank You\n\nD. Laksono, R. Jianu, & A. Slingsby\n\n dany.laksono@city.ac.uk\n\n\n danylaksono\n\ngiCentre, City St. George’s, University of London.\n\n\n\nCode repository"
   },
   {
     "objectID": "presentations/example.html#getting-started",
