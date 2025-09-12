@@ -1,0 +1,19 @@
+project:
+  type: website
+  resources:
+    - cgvc2025/**
+
+website:
+  title: "Presentations"
+  navbar:
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Presentations"
+        href: presentations/index.qmd
+
+format:
+  html:
+    theme: cosmo
+    toc: false
+

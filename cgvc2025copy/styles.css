@@ -1,0 +1,76 @@
+:root {
+  --font-main: 'Inter', sans-serif;
+  --color-text-body: #333333;
+  --color-text-heading: #0a2e5c; /* Dark Blue */
+  --color-highlight: #D4AF37; /* Gold */
+  --bg-color: #FFFFFF;
+}
+
+.reveal {
+  font-family: var(--font-main);
+  font-size: 28px;
+  color: var(--color-text-body);
+  font-weight: 300;
+}
+
+.reveal .slides {
+  background-color: var(--bg-color);
+}
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+  font-family: var(--font-main);
+  color: var(--color-text-heading);
+  font-weight: 700;
+  text-transform: none;
+  margin-bottom: 25px;
+}
+.reveal h1 { font-size: 2.2em; }
+.reveal h2 { font-size: 1.6em; }
+.reveal h3 { font-size: 1.2em; }
+.reveal p, .reveal li { line-height: 1.5; }
+
+.reveal strong { font-weight: 700; color: var(--color-text-heading); }
+.highlight-gold { font-weight: 700; color: var(--color-highlight); }
+
+.reveal .columns {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 30px;
+}
+.reveal .column { flex: 1; margin: 0; }
+.reveal .column img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+.reveal figcaption {
+  font-size: 0.5em;
+  text-align: center;
+  margin-top: 8px;
+  color: #777;
+}
+.reveal .smaller-text { font-size: 0.85em; }
+.reveal ul, .reveal ol { display: block; margin-left: 25px; }
+.reveal hr { border-color: rgba(0,0,0,0.1); }
+
+.reveal .logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+.reveal .logo {
+  height: 50px;
+  max-width: 120px;
+  object-fit: contain;
+}
+
+/* Absolute positioning helper for Quarto figure blocks */
+.absolute { position: absolute; }
+

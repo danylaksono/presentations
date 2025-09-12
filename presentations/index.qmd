@@ -1,0 +1,11 @@
+---
+title: "Presentations"
+listing:
+  contents: .
+  type: table
+  sort: "date desc"
+  fields: [title, date, categories, description]
+---
+
+All slide decks in this directory are listed above.
+

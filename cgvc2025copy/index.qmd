@@ -1,0 +1,291 @@
+---
+# title: "Interactive Visual Analytics for Local Decarbonisation Planning"
+# subtitle: "Empowering Policy-Aligned Scenario Exploration"
+# author:  "Dany Laksono, Radu Jianu, & Aidan Slingsby"
+format:
+  revealjs:
+    theme: simple
+   #  logo: "../cgvc2025/assets/citystgeorgelogo.png"
+    css: styles.css
+    include-in-header:
+      text: |
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    footer: "[danylaksono.github.io/presentations/cgvc2025/](danylaksono.github.io/presentations/cgvc2025/)"
+    slide-number: c/t
+    transition: slide
+   #  title-slide-attributes:
+   #    data-background-image: ../cgvc2025/assets/citystgeorgelogo.png
+   #    # data-background-size: 15%
+   #    data-background-position: "98% 5%"
+    center: true
+    background-transition: fade
+    incremental: true
+   #  width: 1280
+   #  height: 720
+---
+<!-- 
+<h1> Interactive Visual Analytics<br>for Local Decarbonisation Planning </h1>
+
+<h2> Empowering Policy‑Aligned Scenario Exploration </h2>
+
+<hr>
+
+<h3> D. Laksono, R. Jianu, &amp; A. Slingsby </h3>
+<h4> City, University of London </h4>
+
+<br>
+
+<h3> Live Demo: <a href="https://decarb-vis.netlify.app">decarb-vis.netlify.app</a> &nbsp;&nbsp; Source: <a href="https://github.com/danylaksono/decarbonisation-glyphmap-planner">GitHub</a></h3> -->
+<!-- 
+![](../cgvc2025/assets/citystgeorgelogo.png){.absolute top=290 left=1000 width="200"}
+![](../cgvc2025/assets/giCentrelogo.webp){.absolute top=425 left=1000 width="200"}
+![](../cgvc2025/assets/ai_logo.png){.absolute top=500 left=1010 height="65"} -->
+
+
+```{=html}
+  <div style="min-height:100%; display:flex; justify-content:center; align-items:center;">
+    <div style="width:100%; text-align:center;">
+                  <!-- Logos -->
+            <!-- <div class="logo-container">
+               <img src="assets/citystgeorgelogo.png" alt="City St George's Logo" class="logo">
+               <img src="assets/giCentrelogo.webp" alt="giCentre Logo" class="logo">
+               <img src="assets/ai_logo.png" alt="AI Logo" class="logo">
+            </div> -->
+      <h1>Interactive Visual Analytics for Local Decarbonisation Planning</h1>
+      <p>Empowering Policy-Aligned Scenario Exploration</p>
+      <hr>
+      <p><strong>Dany Laksono, Radyu Jianu, & Aidan Slingsby</strong></p>
+      <p><small>City St. George's, University of London</small></p>
+
+      </div>
+   </div>
+```
+
+---
+
+
+::: {.center}
+With the 2050 deadline looming, the UK’s pursuit of its [net zero target]{.highlight-gold} is a contentious journey 
+marked by legal challenges, policy reversals, and ongoing debate over the pace and feasibility of the transition.
+:::
+
+---
+
+## The Challenge: A 'Wicked Problem'
+
+Developing effective and equitable decarbonisation plans is a complex balancing act for UK local authorities.
+
+:::: {.columns}
+::: {.column width="50%"}
+#### They must balance:
+
+- Technical factors (Carbon reduction)
+- Economic factors (Costs, budgets)
+- Social factors (Fuel poverty, equity)
+:::
+::: {.column width="50%"}
+#### Resulting in a 'wicked problem':
+
+- Conflicting stakeholder priorities.
+- Massive, multivariate datasets.
+- No single 'optimal' solution.
+:::
+::::
+
+
+---
+
+## The Gap in Existing Tools
+
+:::: {.columns}
+::: {.column width="50%"}
+### Traditional GIS
+
+![](https://placehold.co/400x300/E8F5E9/4CAF50?text=Stacked+Map+Layers)
+
+<figcaption>The 'map layer metaphor' increases cognitive load by forcing users to mentally integrate fragmented information.</figcaption>
+:::
+::: {.column width="50%"}
+### 'Black Box' Optimisation
+
+![](https://placehold.co/400x300/F3E5F5/9C27B0?text=Black+Box+Model)
+
+<figcaption>Monolithic optimisation models hide the trade-offs inherent in the planning process.</figcaption>
+:::
+::::
+
+::: {.notes}
+Traditional GIS forces users to flip between layers; black-box optimisation hides trade-offs and the "why" behind results.
+:::
+
+---
+
+## Why Simulation, Not Just Optimisation?
+
+For a 'wicked problem', the goal is not a single optimal answer, but to explore a range of plausible and defensible futures.
+
+:::: {.columns}
+::: {.column width="50%"}
+#### Optimisation
+
+- Asks: "What is the best solution?"
+- Finds a single, mathematically optimal result.
+- Treats qualitative goals as rigid constraints.
+- Hides inherent trade-offs inside the model.
+:::
+::: {.column width="50%"}
+#### Simulation (Our Approach)
+
+- Asks: "If we do X, what happens?"
+- Enables multiple what-if scenarios.
+- Augments human judgment for complex goals.
+- Makes trade-offs explicit and visible.
+:::
+::::
+
+::: {.notes}
+We ask a different question: "If we make this decision, what happens?" It augments expert judgment and makes trade-offs explicit.
+:::
+
+---
+
+## Our Contribution: A Human-in-the-Loop Paradigm
+
+We built a visual analytics system on three core contributions to enable this exploratory process.
+
+1. Modular, Component-Based Planning  
+   <small>Decomposes complex strategy-building into manageable, interpretable parts.</small>
+2. Multi-Scale, Glyph-Based Visualisation  
+   <small>Represents multivariate and temporal data uniformly across geographic scales.</small>
+3. An Integrated, Iterative Workflow  
+   <small>Tightly couples data exploration, simulation, and outcome analysis for real-time feedback.</small>
+
+---
+
+## The Decarbonisation Planner
+
+![](https://placehold.co/800x450/E1F5FE/03A9F4?text=Figure+1:+Dashboard)
+
+<figcaption>The main interface integrates intervention authoring, data tables, a scenario timeline, and a glyph-map for outcome analysis.</figcaption>
+
+---
+
+## A Workflow for Policy Exploration
+
+Our system supports an iterative, four-step process (T1-T4):
+
+1. Identify & Characterise Cohorts (T1)  
+   <small>Use linked map and table to filter and select groups of buildings.</small>
+2. Author Scenarios via Composition (T2)  
+   <small>Define and layer modular plan components on the timeline.</small>
+3. Compare Spatio-Temporal Outcomes (T3)  
+   <small>Instantly simulate impacts and visualise them on the glyph-map.</small>
+4. Explore Alternatives through Iteration (T4)  
+   <small>Adjust parameters, re-order components, and immediately see the results.</small>
+
+---
+
+## Visualising Complex Trade-offs with Glyphs
+
+![](https://placehold.co/800x400/FFF3E0/FF9800?text=Figure+3:+Glyph+Designs)
+
+<figcaption>Left: radial glyph for multi-attribute potential. Right: mirrored streamgraph showing Carbon Saved (green) vs. Cost (red) over time.</figcaption>
+
+---
+
+## Managing Scale & Analytical Clarity
+
+![](https://placehold.co/800x450/E8EAF6/3F51B5?text=Figure+2:+Multi-scale+View)
+
+<figcaption>Data is represented consistently across scales. Geography can be 'squarified' to give areas equal visual prominence.</figcaption>
+
+---
+
+## Merits & Limitations
+
+:::: {.columns}
+::: {.column width="50%"}
+### Merits
+
+- Transparent & interpretable
+- Reduces cognitive load
+- Fosters iteration & dialogue
+:::
+::: {.column width="50%"}
+### Limitations
+
+- Need for formal evaluation
+- Model simplification
+- Scalability
+:::
+::::
+
+---
+
+## Conclusion & Future Work
+
+We reframed decarbonisation planning from a rigid, monolithic process into a transparent, flexible, and iterative dialogue.
+
+Future work:
+
+1. Conduct contextual user studies
+2. Enhance simulation fidelity
+3. Develop side-by-side scenario comparison
+
+---
+
+## Thank You
+
+**D. Laksono, R. Jianu, & A. Slingsby**
+
+**Live Demo:** <https://decarb-vis.netlify.app>
+
+**Source Code:** <https://github.com/danylaksono/decarbonisation-glyphmap-planner>
+
+---
+
+## Anticipated Q&A {visibility="hidden"}
+
+### Q&A: Glyph Design Rationale
+
+**Q:** Why not use simpler charts like bars?  
+**A:** We optimise for at-a-glance assessment of temporal trade-offs across space.
+
+1. Direct comparison via mirrored cost vs carbon saved
+2. Focus on trajectory and cumulative nature
+3. Space efficiency at scale
+
+---
+
+## Q&A: The Use of Cartograms {visibility="hidden"}
+
+**Q:** Does distorting geography risk misleading the user?  
+**A:** We intentionally sacrifice geographic fidelity to gain analytical clarity and perceptual fairness.
+
+- Large, sparse areas can dominate visually
+- Grid cartogram gives equal visual prominence
+- Users can toggle back to standard view for context
+
+---
+
+## Q&A: Role of Multi-Objective Decision Making {visibility="hidden"}
+
+:::: {.columns}
+::: {.column width="50%"}
+#### MOO & Pareto Fronts
+
+- Computes a set of mathematically optimal solutions
+- User explores pre-computed results
+- Struggles with qualitative objectives (e.g., equity)
+:::
+::: {.column width="50%"}
+#### Our System's Approach
+
+- Facilitates human-led exploration of decision space
+- User authors scenarios based on objectives
+- Augments the decision-maker, does not automate the decision
+:::
+::::
+

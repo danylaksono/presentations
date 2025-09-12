@@ -1,0 +1,216 @@
+---
+title: "Progress Review - January"
+subtitle: "Dany Laksono"
+format: 
+  revealjs:
+    theme: simple
+    logo: "../images/logo2.png"
+    footer: "27/01/2023"
+    transition: slide
+    background-transition: fade
+    incremental: true 
+
+---
+
+
+## Contents
+
+1. Review action points
+2. Progress with literature review
+4. Progress with AITL Visualization
+4. Agreed Action points
+
+
+# Review
+
+## From the last meeting
+
+Agreed action points: 
+
+::: {.r-fit-text}
+1. On geovisualization platform: 
+    1. Try to do the aggregation on the backend → combine the data (e.g. time series) through some statistical measure to multivariate layer, then send them to client side and process the visualization (glyph) based on the aggregated data
+    2. Don’t constraint too much on shape (H3), or libraries (Maplibre). Focus on what is actually needed for the visualization, then starts from there
+2.  On Literature review: 
+    1. ensure that no previous paper discussing about literature review of state-of-the-art in multivariate geospatial visualization
+    2. this could lead to a specific STAR paper discussing about the topic
+3. Paper preparation: 
+    1. For EuroVIS, write up the STAR paper (P0), and start from there with P1, work in parallel with other ideas
+    2. Need some discussion with AITL to have sample of data which possess spatio-temporal characteristics (e.g. carbon intensity) on a MSOA level
+:::
+
+
+## From the last meeting
+
+Papers:
+
+**P0:** A STAR paper, focusing on state-of-the-art, systematic review of multivariate geospatial data visualization
+
+**P1:** A Design Space paper on multivariate geospatial data visualization, specifically on glyph visualization with guidelines from Aidan’s paper
+
+**P2:** User evaluation of P1
+
+**P3:** Domain problem paper on Covid Dataset
+
+**P3-like:** Domain problem paper on Energy Dataset
+
+
+## Progress with Literature review
+
+On P0:
+
+* The VISpub dataset [(Isenberg et.al., 2017)](https://sites.google.com/site/vispubdata/home) 
+
+* Visualization of VISpub dataset by [Isenberg, et.al., 2017b](http://keyvis.org/)
+
+* Geospatial visualization review (Yoshizumi et.al., 2020)
+
+
+## Progress with Literature review (P0)
+
+The VISpub dataset (Isenberg et.al., 2017):
+
+* [A curated database of papers](https://docs.google.com/spreadsheets/d/1xgoOPu28dQSSGPIp_HHQs0uvvcyLNdkMF9XtRajhhxU/edit#gid=2041917285) published in VIS conferences
+* Last update: 2021. As of now, consist of 3504 papers published in vis conferences (VIS, INFOVIS, VAST, SCIVIS)
+
+
+## Progress with Literature review (P0)
+
+The VISpub dataset (Isenberg et.al., 2017):
+
+[Conferences included](https://lh6.googleusercontent.com/S45LBLIJBNpDEqLACvRidV1pexWbQCocBhaulfxkySuRu8UCmvGzRXiYmvBr7ZpcVMVS8cQ_OZnPIOzeiq1vpJXGR0o-K8knnmsdTkP4NNVCCD3qGja0QS0sDzN7mVPvMPBziuO_nbBQyL1K7a6ZJMoo1fOqJ05A2EiRWAamcrKabHkyqHqnscNkA_2bPACA=w1280): 
+
+![](../images/2023-01-27-10-12-06.png)
+
+* Some visualization papers have been developed based on the dataset
+
+* Utilizing information extraction and manual adjustments
+
+## Progress with Literature review (P0)
+
+Keyvis visualization (Isenberg et.al., 2017b):
+
+* Use co-word analysis to extract keywords from these conferences:
+
+![](../images/2023-01-27-10-16-59.png)
+
+
+## Progress with Literature review (P0)
+
+Keyvis visualization (Isenberg et.al., 2017b):
+
+* Some important takeaways. List of related keywords on geovisualization:
+![](../images/2023-01-27-10-19-54.png)
+
+
+## Progress with Literature review (P0)
+
+Yoshizumi, et.al. (2020)
+
+![](../images/2023-01-27-09-51-48.png)
+
+
+
+## Progress with Literature review (P0)
+
+[Yoshizumi, et.al. (2020)](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9331291)
+
+* a need to define and limit the term 'geovisualization'
+* The method used in the review was a systematic analysis of 585 papers.
+* Two reviewers examined each paper to identify where geospatial data was used and generated keywords and short descriptions for it.
+
+## Progress with Literature review (P0)
+
+[Yoshizumi, et.al. (2020)](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9331291)
+
+![](../images/2023-01-27-10-23-53.png)
+
+
+* Papers are selected based on questions such as above, utilizing word filter
+
+* A separate team then synthesized this information, made final decisions on category selection, and identified 94 IEEE VIS papers from years 2017-2019 that had geospatial content.
+* "increasing trend towards blurring divisions between SciVis & InfoVis tracks"
+
+
+
+
+## Progress with Literature Review (P0)
+
+Ideas:
+1. Augment the existing datasets with other set of data:
+* My own curated papers. This includes papers that are outside of VIS area (i.e., papers that are published in GIS conferences/journals)
+* CGF/Eurovis dataset, especially the STAR papers as published by [Chen (2020)](https://sites.google.com/site/drminchen/cgf-info/cgf-stars)
+* Similar paper collections in GIS conferences (I can't find any for now, but some position papers discuss about the intersection of GIS and visualization domain, e.g., [Schiewe, 2013](https://link.springer.com/article/10.1007/BF03546122), and [Christophe, 2020](https://www.scitepress.org/Link.aspx?doi=10.5220/0009355703250332))
+
+
+
+## Progress with Literature Review (P0)
+
+2. Use visual analytics as a tool to extract visualization methods used for geospatial analysis
+
+   Some examples:
+   - [Observable Notebook by '@Fil'](https://observablehq.com/@observablehq/vispubdata) (Data up to 2021)
+   - [Keyvis](http://keyvis.org/) (Isenberg, 2017)
+   - [Observable Notebook by John Guerra](https://observablehq.com/@john-guerra/ieeevis-2020-papers?collection=@observablehq/featured-creators) (Data up to 2020)
+
+
+## Progress with Literature Review (P0)
+
+Ideas:
+
+3. Build a ‘proper’ database and website consisting of the original Isenberg dataset and allows registered users to add more data to the database
+
+4. Use LLMs to extract information during literature review/visual analytics process
+   
+   [A rough example](https://colab.research.google.com/drive/1e0ZKVX8NLVGEIVOFN8E1Tbpi5KbK2Oh8?usp=sharing)
+
+5. A literate programming approach for literature review: [A WIP](https://danylaksono.com/litrev) 
+
+
+## Progress with Literature Review (P1)
+
+* Lots of papers discussing about Glyph (Borgo, et.al., 2012; Ward, 2008; Fuchs, 2017, etc..)
+
+* Highly varied in terms of method and visualization design
+
+* could start from the Isenberg Vispub dataset for review
+
+
+## Progress with geovisualization platform
+
+Had a meeting with Lily, discussing about AITL's visualization needs. Some key takeaways:
+
+I will be involved in some client meetings to better understand their needs
+
+The three main actors (’users’):
+
+1. Local Authorities
+2. DNOs
+3. Consultants
+
+
+
+## Progress with geovisualization platform
+
+Two problems that AITL tries to tackle regarding data:
+
+1. How to model the network needs in a lower granularity (e.g. Building level, by DNOs)
+2. How to model decision making in a higher level granularity (local authorities)
+
+
+## Progress with geovisualization platform
+
+* AITL has been developing a Dashboard and Data stories platform
+
+* Some GIS problems which requires visualization design decision
+
+
+
+## Action points
+ 
+
+* Write up the P0 paper based on the ideas as mentioned
+
+* Start a literature review on P1
+
+* Working on the platform as discussed with AITL
