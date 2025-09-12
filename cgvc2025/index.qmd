@@ -160,6 +160,10 @@ By enabling [an exploratory process with visual analytics]{.underline}, it [augm
 
 Our system supports an iterative, four-step process (T1-T4):
 
+::::{.columns}
+:::{.columns width="60%"}
+
+::: {.nonincremental}
 1. Identify & Characterise Cohorts (T1)  
    <small>Use linked map and table to filter and select groups of buildings.</small>
 2. Author Scenarios via Composition (T2)  
@@ -168,6 +172,39 @@ Our system supports an iterative, four-step process (T1-T4):
    <small>Instantly simulate impacts and visualise them on the glyph-map.</small>
 4. Explore Alternatives through Iteration (T4)  
    <small>Adjust parameters, re-order components, and immediately see the results.</small>
+:::
+:::
+
+:::{.columns width=40%}
+```{mermaid}
+graph TD
+
+%% Node style definitions
+classDef cohorts fill:#e0f7fa,stroke:#00838f,stroke-width:2px,color:#004d40,font-weight:bold,font-size:14px,rx:8px,ry:8px;
+classDef scenarios fill:#f3e5f5,stroke:#6a1b9a,stroke-width:2px,color:#311b92,font-weight:bold,font-size:14px,rx:8px,ry:8px;
+classDef simulate fill:#fff9c4,stroke:#f57f17,stroke-width:2px,color:#e65100,font-weight:bold,font-size:14px,rx:8px,ry:8px;
+classDef iterate fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20,font-weight:bold,font-size:14px,rx:8px,ry:8px;
+
+%% Nodes
+A([T1: Identify Cohorts]) --> B([T2: Author Scenarios])
+B --> C([T3: Simulate and Evaluate])
+C --> D([T4: Iterate and Refine])
+D -.-> A
+
+%% Apply classes
+class A cohorts;
+class B scenarios;
+class C simulate;
+class D iterate;
+
+```
+:::
+::::
+---
+
+### T1: Identify Cohorts
+
+![Use the linked Table and Map views to select specific groups of buildings for intervention](./assets/t1_identify.gif)
 
 ---
 
@@ -188,7 +225,7 @@ The glyph design replaces layered cartograms to visualise multivariate data.
 
 ---
 
-## Merits & Limitations
+<!-- ## Merits & Limitations
 
 :::: {.columns}
 ::: {.column width="50%"}
@@ -207,7 +244,7 @@ The glyph design replaces layered cartograms to visualise multivariate data.
 :::
 ::::
 
----
+--- -->
 
 ## Conclusion & Future Work
 

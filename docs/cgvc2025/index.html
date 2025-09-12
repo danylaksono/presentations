@@ -121,6 +121,9 @@
       margin-right: 0; 
     }
   </style>
+  <script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+  <script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+  <link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&amp;display=swap" rel="stylesheet">
@@ -262,17 +265,58 @@
 <section id="a-workflow-for-policy-exploration" class="slide level2 center">
 <h2>A Workflow for Policy Exploration</h2>
 <p>Our system supports an iterative, four-step process (T1-T4):</p>
+<div class="columns">
+<div class="columns" width="60%">
 <ol type="1">
-<li class="fragment">Identify &amp; Characterise Cohorts (T1)<br>
+<li>Identify &amp; Characterise Cohorts (T1)<br>
 <small>Use linked map and table to filter and select groups of buildings.</small></li>
-<li class="fragment">Author Scenarios via Composition (T2)<br>
+<li>Author Scenarios via Composition (T2)<br>
 <small>Define and layer modular plan components on the timeline.</small></li>
-<li class="fragment">Compare Spatio-Temporal Outcomes (T3)<br>
+<li>Compare Spatio-Temporal Outcomes (T3)<br>
 <small>Instantly simulate impacts and visualise them on the glyph-map.</small></li>
-<li class="fragment">Explore Alternatives through Iteration (T4)<br>
+<li>Explore Alternatives through Iteration (T4)<br>
 <small>Adjust parameters, re-order components, and immediately see the results.</small></li>
 </ol>
+</div><div class="columns" width="40%">
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TD
+
+%% Node style definitions
+classDef cohorts fill:#e0f7fa,stroke:#00838f,stroke-width:2px,color:#004d40,font-weight:bold,font-size:14px,rx:8px,ry:8px;
+classDef scenarios fill:#f3e5f5,stroke:#6a1b9a,stroke-width:2px,color:#311b92,font-weight:bold,font-size:14px,rx:8px,ry:8px;
+classDef simulate fill:#fff9c4,stroke:#f57f17,stroke-width:2px,color:#e65100,font-weight:bold,font-size:14px,rx:8px,ry:8px;
+classDef iterate fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20,font-weight:bold,font-size:14px,rx:8px,ry:8px;
+
+%% Nodes
+A([T1: Identify Cohorts]) --&gt; B([T2: Author Scenarios])
+B --&gt; C([T3: Simulate and Evaluate])
+C --&gt; D([T4: Iterate and Refine])
+D -.-&gt; A
+
+%% Apply classes
+class A cohorts;
+class B scenarios;
+class C simulate;
+class D iterate;
+
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
+<section class="slide level2 center">
+
+<h3 id="t1-identify-cohorts">T1: Identify Cohorts</h3>
+
+<img data-src="./assets/t1_identify.gif" class="r-stretch quarto-figure-center"><p class="caption">Use the linked Table and Map views to select specific groups of buildings for intervention</p></section>
 <section id="visualising-complex-trade-offs-with-glyphs" class="slide level2 center">
 <h2>Visualising Complex Trade-offs with Glyphs</h2>
 <p>The glyph design replaces layered cartograms to visualise multivariate data.</p>
@@ -293,24 +337,28 @@
 </div>
 </div></div>
 </section>
-<section id="merits-limitations" class="slide level2 center">
-<h2>Merits &amp; Limitations</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<h3 id="merits">Merits</h3>
-<ul>
-<li class="fragment">Transparent &amp; interpretable</li>
-<li class="fragment">Reduces cognitive load</li>
-<li class="fragment">Fosters iteration &amp; dialogue</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<h3 id="limitations">Limitations</h3>
-<ul>
-<li class="fragment">Need for formal evaluation</li>
-<li class="fragment">Model simplification</li>
-<li class="fragment">Scalability</li>
-</ul>
-</div></div>
+<section class="slide level2 center">
+
+<!-- ## Merits & Limitations
+
+:::: {.columns}
+::: {.column width="50%"}
+### Merits
+
+- Transparent & interpretable
+- Reduces cognitive load
+- Fosters iteration & dialogue
+:::
+::: {.column width="50%"}
+### Limitations
+
+- Need for formal evaluation
+- Model simplification
+- Scalability
+:::
+::::
+
+--- -->
 </section>
 <section id="conclusion-future-work" class="slide level2 center">
 <h2>Conclusion &amp; Future Work</h2>

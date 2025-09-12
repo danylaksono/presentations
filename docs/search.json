@@ -67,7 +67,7 @@
     "href": "cgvc2025/index.html#a-workflow-for-policy-exploration",
     "title": "Presentations",
     "section": "A Workflow for Policy Exploration",
-    "text": "A Workflow for Policy Exploration\nOur system supports an iterative, four-step process (T1-T4):\n\nIdentify & Characterise Cohorts (T1)\nUse linked map and table to filter and select groups of buildings.\nAuthor Scenarios via Composition (T2)\nDefine and layer modular plan components on the timeline.\nCompare Spatio-Temporal Outcomes (T3)\nInstantly simulate impacts and visualise them on the glyph-map.\nExplore Alternatives through Iteration (T4)\nAdjust parameters, re-order components, and immediately see the results."
+    "text": "A Workflow for Policy Exploration\nOur system supports an iterative, four-step process (T1-T4):\n\n\n\nIdentify & Characterise Cohorts (T1)\nUse linked map and table to filter and select groups of buildings.\nAuthor Scenarios via Composition (T2)\nDefine and layer modular plan components on the timeline.\nCompare Spatio-Temporal Outcomes (T3)\nInstantly simulate impacts and visualise them on the glyph-map.\nExplore Alternatives through Iteration (T4)\nAdjust parameters, re-order components, and immediately see the results.\n\n\n\n\n\n\n\ngraph TD\n\n%% Node style definitions\nclassDef cohorts fill:#e0f7fa,stroke:#00838f,stroke-width:2px,color:#004d40,font-weight:bold,font-size:14px,rx:8px,ry:8px;\nclassDef scenarios fill:#f3e5f5,stroke:#6a1b9a,stroke-width:2px,color:#311b92,font-weight:bold,font-size:14px,rx:8px,ry:8px;\nclassDef simulate fill:#fff9c4,stroke:#f57f17,stroke-width:2px,color:#e65100,font-weight:bold,font-size:14px,rx:8px,ry:8px;\nclassDef iterate fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20,font-weight:bold,font-size:14px,rx:8px,ry:8px;\n\n%% Nodes\nA([T1: Identify Cohorts]) --&gt; B([T2: Author Scenarios])\nB --&gt; C([T3: Simulate and Evaluate])\nC --&gt; D([T4: Iterate and Refine])\nD -.-&gt; A\n\n%% Apply classes\nclass A cohorts;\nclass B scenarios;\nclass C simulate;\nclass D iterate;"
   },
   {
     "objectID": "cgvc2025/index.html#visualising-complex-trade-offs-with-glyphs",
@@ -75,13 +75,6 @@
     "title": "Presentations",
     "section": "Visualising Complex Trade-offs with Glyphs",
     "text": "Visualising Complex Trade-offs with Glyphs\nThe glyph design replaces layered cartograms to visualise multivariate data.\n\n\n\n\n\nDecarbonisation potential and timelines are presented consistently accross different scales.\n\n\n\n\n\n\nMap view can be toggled back and forth between cartogram and regular geographic boundaries, allowing comparison."
-  },
-  {
-    "objectID": "cgvc2025/index.html#managing-scale-analytical-clarity",
-    "href": "cgvc2025/index.html#managing-scale-analytical-clarity",
-    "title": "Presentations",
-    "section": "Managing Scale & Analytical Clarity",
-    "text": "Managing Scale & Analytical Clarity\n\n\nData is represented consistently across scales. Geography can be ‘squarified’ to give areas equal visual prominence."
   },
   {
     "objectID": "cgvc2025/index.html#merits-limitations",
@@ -278,5 +271,19 @@
     "title": "Presentations",
     "section": "",
     "text": "Please keep the issue tracker limited to bug reports, feature requests and pull requests.\n\n\nIf you have personal support or setup questions the best place to ask those are StackOverflow.\n\n\n\nWhen reporting a bug make sure to include information about which browser and operating system you are on as well as the necessary steps to reproduce the issue. If possible please include a link to a sample presentation where the bug can be tested.\n\n\n\n\nShould follow the coding style of the file you work in, most importantly:\n\nTabs to indent\nSingle-quoted strings\n\nShould be made towards the dev branch\nShould be submitted from a feature/topic branch (not your master)\n\n\n\n\nPlease do not submit plugins as pull requests. They should be maintained in their own separate repository. More information here: https://github.com/hakimel/reveal.js/wiki/Plugin-Guidelines"
+  },
+  {
+    "objectID": "cgvc2025/index.html#section",
+    "href": "cgvc2025/index.html#section",
+    "title": "Presentations",
+    "section": ":",
+    "text": ":"
+  },
+  {
+    "objectID": "cgvc2025/index.html#t1-identify-cohorts",
+    "href": "cgvc2025/index.html#t1-identify-cohorts",
+    "title": "Presentations",
+    "section": "T1: Identify Cohorts",
+    "text": "T1: Identify Cohorts\n\nUse the linked Table and Map views to select specific groups of buildings for intervention"
   }
 ]
