@@ -1,0 +1,289 @@
+[
+  {
+    "objectID": "assemble/plugin/markdown/example.html",
+    "href": "assemble/plugin/markdown/example.html",
+    "title": "Markdown Demo",
+    "section": "",
+    "text": "Content 1.1\nNote: This will only appear in the speaker notes window.\n\n\n\nContent 1.2\n\n\n\nContent 2.1\n\n\n\nContent 3.1\n\n\n\nContent 3.2"
+  },
+  {
+    "objectID": "assemble/plugin/markdown/example.html#external-1.1",
+    "href": "assemble/plugin/markdown/example.html#external-1.1",
+    "title": "Markdown Demo",
+    "section": "",
+    "text": "Content 1.1\nNote: This will only appear in the speaker notes window."
+  },
+  {
+    "objectID": "assemble/plugin/markdown/example.html#external-1.2",
+    "href": "assemble/plugin/markdown/example.html#external-1.2",
+    "title": "Markdown Demo",
+    "section": "",
+    "text": "Content 1.2"
+  },
+  {
+    "objectID": "assemble/plugin/markdown/example.html#external-2",
+    "href": "assemble/plugin/markdown/example.html#external-2",
+    "title": "Markdown Demo",
+    "section": "",
+    "text": "Content 2.1"
+  },
+  {
+    "objectID": "assemble/plugin/markdown/example.html#external-3.1",
+    "href": "assemble/plugin/markdown/example.html#external-3.1",
+    "title": "Markdown Demo",
+    "section": "",
+    "text": "Content 3.1"
+  },
+  {
+    "objectID": "assemble/plugin/markdown/example.html#external-3.2",
+    "href": "assemble/plugin/markdown/example.html#external-3.2",
+    "title": "Markdown Demo",
+    "section": "",
+    "text": "Content 3.2"
+  },
+  {
+    "objectID": "cgvc2025/index.html#the-challenge",
+    "href": "cgvc2025/index.html#the-challenge",
+    "title": "Presentations",
+    "section": "The Challenge:",
+    "text": "The Challenge:\nDeveloping effective and equitable decarbonisation plans is a complex balancing act for UK local authorities.\n\n\nThey must balance:\n\nTechnical factors (Carbon reduction)\nEconomic factors (Costs, budgets)\nSocial factors (Fuel poverty, equity)\n\n\n…exacerbated by:\n\nConflicting stakeholder priorities.\nMassive, multivariate datasets.\nNo single ‘optimal’ solution.\n\n\n\nThis is a wicked problem in decision making."
+  },
+  {
+    "objectID": "cgvc2025/index.html#our-approach-a-human-in-the-loop-paradigm",
+    "href": "cgvc2025/index.html#our-approach-a-human-in-the-loop-paradigm",
+    "title": "Presentations",
+    "section": "Our Approach: A Human-in-the-Loop Paradigm",
+    "text": "Our Approach: A Human-in-the-Loop Paradigm\nWe ask a different question: “If we make this decision, what happens?”.\n\nModular, Component-Based Planning\nDecomposes complex strategy-building into manageable, interpretable parts.\nMulti-Scale, Glyph-Based Visualisation\nRepresents multivariate and temporal data uniformly across geographic scales.\nAn Integrated, Iterative Workflow\nTightly couples data exploration, simulation, and outcome analysis for real-time feedback.\n\n\nBy enabling an exploratory process with visual analytics, it augments expert judgment and makes trade-offs explicit."
+  },
+  {
+    "objectID": "cgvc2025/index.html#the-decarbonisation-planner",
+    "href": "cgvc2025/index.html#the-decarbonisation-planner",
+    "title": "Presentations",
+    "section": "The Decarbonisation Planner",
+    "text": "The Decarbonisation Planner\n\n\n\nThe main interface integrates A) intervention authoring, B) data tables, C) a scenario timeline, and D) a glyph-map for outcome analysis.\n\n\n\n\nhttps://decarb-vis.netlify.app/"
+  },
+  {
+    "objectID": "cgvc2025/index.html#a-workflow-for-policy-exploration",
+    "href": "cgvc2025/index.html#a-workflow-for-policy-exploration",
+    "title": "Presentations",
+    "section": "A Workflow for Policy Exploration",
+    "text": "A Workflow for Policy Exploration\nOur system supports an iterative, four-step process (T1-T4):\n\n\n\nIdentify & Characterise Cohorts (T1)\nUse linked map and table to filter and select groups of buildings.\nAuthor Scenarios via Composition (T2)\nDefine and layer modular plan components on the timeline.\nCompare Spatio-Temporal Outcomes (T3)\nInstantly simulate impacts and visualise them on the glyph-map.\nExplore Alternatives through Iteration (T4)\nAdjust parameters, re-order components, and immediately see the results.\n\n\n\n\n\n\n\ngraph TD\n\n%% Node style definitions\nclassDef cohorts fill:#e0f7fa,stroke:#00838f,stroke-width:2px,color:#004d40,font-weight:bold,font-size:14px,rx:8px,ry:8px;\nclassDef scenarios fill:#f3e5f5,stroke:#6a1b9a,stroke-width:2px,color:#311b92,font-weight:bold,font-size:14px,rx:8px,ry:8px;\nclassDef simulate fill:#fff9c4,stroke:#f57f17,stroke-width:2px,color:#e65100,font-weight:bold,font-size:14px,rx:8px,ry:8px;\nclassDef iterate fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20,font-weight:bold,font-size:14px,rx:8px,ry:8px;\n\n%% Nodes\nA([T1: Identify Cohorts]) --&gt; B([T2: Author Scenarios])\nB --&gt; C([T3: Simulate and Evaluate])\nC --&gt; D([T4: Iterate and Refine])\nD -.-&gt; A\n\n%% Apply classes\nclass A cohorts;\nclass B scenarios;\nclass C simulate;\nclass D iterate;"
+  },
+  {
+    "objectID": "cgvc2025/index.html#visualising-complex-trade-offs-with-glyphs",
+    "href": "cgvc2025/index.html#visualising-complex-trade-offs-with-glyphs",
+    "title": "Presentations",
+    "section": "Visualising Complex Trade-offs with Glyphs",
+    "text": "Visualising Complex Trade-offs with Glyphs\nThe glyph design replaces layered cartograms to visualise multivariate data.\n\n\n\n\n\nDecarbonisation potential and timelines are presented consistently accross different scales.\n\n\n\n\n\n\nMap view can be toggled back and forth between cartogram and regular geographic boundaries, allowing comparison."
+  },
+  {
+    "objectID": "cgvc2025/index.html#merits-limitations",
+    "href": "cgvc2025/index.html#merits-limitations",
+    "title": "Presentations",
+    "section": "Merits & Limitations",
+    "text": "Merits & Limitations\n\n\nMerits\n\nTransparent & interpretable\nReduces cognitive load\nFosters iteration & dialogue\n\n\nLimitations\n\nNeed for formal evaluation\nModel simplification\nScalability"
+  },
+  {
+    "objectID": "cgvc2025/index.html#conclusion-future-work",
+    "href": "cgvc2025/index.html#conclusion-future-work",
+    "title": "Presentations",
+    "section": "Conclusion & Future Work",
+    "text": "Conclusion & Future Work\nWe reframed decarbonisation planning from a rigid, monolithic process into a transparent, iterative dialogue informed by contextual interviews with the industrial partner and client.\nFuture work will focus on:\n\nLLM-based user interface – developing a natural language interface that enables decision-makers to interact with complex models more intuitively.\nFurther user studies – conducting structured evaluations with local authority planners to assess usability, trust, and decision support value.\nSide-by-side scenario comparison – enabling direct visual and quantitative comparison of alternative decarbonisation pathways to support informed trade-offs.\nScalability and generalisation – extending the framework to other local authorities and contexts beyond the initial case study."
+  },
+  {
+    "objectID": "cgvc2025/index.html#thank-you",
+    "href": "cgvc2025/index.html#thank-you",
+    "title": "Presentations",
+    "section": "Thank You",
+    "text": "Thank You\n\nD. Laksono, R. Jianu, & A. Slingsby\n\n dany.laksono@city.ac.uk\n\n\n danylaksono\n\ngiCentre, City St. George’s, University of London."
+  },
+  {
+    "objectID": "presentations/example.html#getting-started",
+    "href": "presentations/example.html#getting-started",
+    "title": "Sample Deck",
+    "section": "Getting Started",
+    "text": "Getting Started\n\nThis is a sample slide\nEdit or duplicate this to create your own"
+  },
+  {
+    "objectID": "presentations/example.html#columns",
+    "href": "presentations/example.html#columns",
+    "title": "Sample Deck",
+    "section": "Columns",
+    "text": "Columns\n\n\nLeft content\n\nRight content"
+  },
+  {
+    "objectID": "presentations/example.html#incremental-list",
+    "href": "presentations/example.html#incremental-list",
+    "title": "Sample Deck",
+    "section": "Incremental List",
+    "text": "Incremental List\n\nFirst\nSecond\nThird"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Presentations",
+    "section": "",
+    "text": "Welcome! This site hosts slide decks built with Quarto Revealjs. See the table above for available decks.\nTo add a new deck, create a new .qmd file under presentations/ (you can copy presentations/example.qmd).\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nDate\n\n\n\nCategories\n\n\n\nDescription\n\n\n\n\n\n\n\n\nPresentations\n\n\n \n\n\n \n\n\n\n\n\n\n\n\n\nSample Deck\n\n\nSep 11, 2025\n\n\nexample\n\n\nExample revealjs deck in this Quarto project.\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "my-template.html#contents",
+    "href": "my-template.html#contents",
+    "title": "Progress Review - January",
+    "section": "Contents",
+    "text": "Contents\n\nReview action points\nProgress with literature review\nProgress with AITL Visualization\nAgreed Action points"
+  },
+  {
+    "objectID": "my-template.html#from-the-last-meeting",
+    "href": "my-template.html#from-the-last-meeting",
+    "title": "Progress Review - January",
+    "section": "From the last meeting",
+    "text": "From the last meeting\nAgreed action points:\n\n\nOn geovisualization platform:\n\nTry to do the aggregation on the backend → combine the data (e.g. time series) through some statistical measure to multivariate layer, then send them to client side and process the visualization (glyph) based on the aggregated data\nDon’t constraint too much on shape (H3), or libraries (Maplibre). Focus on what is actually needed for the visualization, then starts from there\n\nOn Literature review:\n\nensure that no previous paper discussing about literature review of state-of-the-art in multivariate geospatial visualization\nthis could lead to a specific STAR paper discussing about the topic\n\nPaper preparation:\n\nFor EuroVIS, write up the STAR paper (P0), and start from there with P1, work in parallel with other ideas\nNeed some discussion with AITL to have sample of data which possess spatio-temporal characteristics (e.g. carbon intensity) on a MSOA level"
+  },
+  {
+    "objectID": "my-template.html#from-the-last-meeting-1",
+    "href": "my-template.html#from-the-last-meeting-1",
+    "title": "Progress Review - January",
+    "section": "From the last meeting",
+    "text": "From the last meeting\nPapers:\nP0: A STAR paper, focusing on state-of-the-art, systematic review of multivariate geospatial data visualization\nP1: A Design Space paper on multivariate geospatial data visualization, specifically on glyph visualization with guidelines from Aidan’s paper\nP2: User evaluation of P1\nP3: Domain problem paper on Covid Dataset\nP3-like: Domain problem paper on Energy Dataset"
+  },
+  {
+    "objectID": "my-template.html#progress-with-literature-review",
+    "href": "my-template.html#progress-with-literature-review",
+    "title": "Progress Review - January",
+    "section": "Progress with Literature review",
+    "text": "Progress with Literature review\nOn P0:\n\nThe VISpub dataset (Isenberg et.al., 2017)\nVisualization of VISpub dataset by Isenberg, et.al., 2017b\nGeospatial visualization review (Yoshizumi et.al., 2020)"
+  },
+  {
+    "objectID": "my-template.html#progress-with-literature-review-p0",
+    "href": "my-template.html#progress-with-literature-review-p0",
+    "title": "Progress Review - January",
+    "section": "Progress with Literature review (P0)",
+    "text": "Progress with Literature review (P0)\nThe VISpub dataset (Isenberg et.al., 2017):\n\nA curated database of papers published in VIS conferences\nLast update: 2021. As of now, consist of 3504 papers published in vis conferences (VIS, INFOVIS, VAST, SCIVIS)"
+  },
+  {
+    "objectID": "my-template.html#progress-with-literature-review-p0-1",
+    "href": "my-template.html#progress-with-literature-review-p0-1",
+    "title": "Progress Review - January",
+    "section": "Progress with Literature review (P0)",
+    "text": "Progress with Literature review (P0)\nThe VISpub dataset (Isenberg et.al., 2017):\nConferences included:\n\n\nSome visualization papers have been developed based on the dataset\nUtilizing information extraction and manual adjustments"
+  },
+  {
+    "objectID": "my-template.html#progress-with-literature-review-p0-2",
+    "href": "my-template.html#progress-with-literature-review-p0-2",
+    "title": "Progress Review - January",
+    "section": "Progress with Literature review (P0)",
+    "text": "Progress with Literature review (P0)\nKeyvis visualization (Isenberg et.al., 2017b):\n\nUse co-word analysis to extract keywords from these conferences:"
+  },
+  {
+    "objectID": "my-template.html#progress-with-literature-review-p0-3",
+    "href": "my-template.html#progress-with-literature-review-p0-3",
+    "title": "Progress Review - January",
+    "section": "Progress with Literature review (P0)",
+    "text": "Progress with Literature review (P0)\nKeyvis visualization (Isenberg et.al., 2017b):\n\nSome important takeaways. List of related keywords on geovisualization:"
+  },
+  {
+    "objectID": "my-template.html#progress-with-literature-review-p0-4",
+    "href": "my-template.html#progress-with-literature-review-p0-4",
+    "title": "Progress Review - January",
+    "section": "Progress with Literature review (P0)",
+    "text": "Progress with Literature review (P0)\nYoshizumi, et.al. (2020)"
+  },
+  {
+    "objectID": "my-template.html#progress-with-literature-review-p0-5",
+    "href": "my-template.html#progress-with-literature-review-p0-5",
+    "title": "Progress Review - January",
+    "section": "Progress with Literature review (P0)",
+    "text": "Progress with Literature review (P0)\nYoshizumi, et.al. (2020)\n\na need to define and limit the term ‘geovisualization’\nThe method used in the review was a systematic analysis of 585 papers.\nTwo reviewers examined each paper to identify where geospatial data was used and generated keywords and short descriptions for it."
+  },
+  {
+    "objectID": "my-template.html#progress-with-literature-review-p0-6",
+    "href": "my-template.html#progress-with-literature-review-p0-6",
+    "title": "Progress Review - January",
+    "section": "Progress with Literature review (P0)",
+    "text": "Progress with Literature review (P0)\nYoshizumi, et.al. (2020)\n\n\nPapers are selected based on questions such as above, utilizing word filter\nA separate team then synthesized this information, made final decisions on category selection, and identified 94 IEEE VIS papers from years 2017-2019 that had geospatial content.\n“increasing trend towards blurring divisions between SciVis & InfoVis tracks”"
+  },
+  {
+    "objectID": "my-template.html#progress-with-literature-review-p0-7",
+    "href": "my-template.html#progress-with-literature-review-p0-7",
+    "title": "Progress Review - January",
+    "section": "Progress with Literature Review (P0)",
+    "text": "Progress with Literature Review (P0)\nIdeas: 1. Augment the existing datasets with other set of data: * My own curated papers. This includes papers that are outside of VIS area (i.e., papers that are published in GIS conferences/journals) * CGF/Eurovis dataset, especially the STAR papers as published by Chen (2020) * Similar paper collections in GIS conferences (I can’t find any for now, but some position papers discuss about the intersection of GIS and visualization domain, e.g., Schiewe, 2013, and Christophe, 2020)"
+  },
+  {
+    "objectID": "my-template.html#progress-with-literature-review-p0-8",
+    "href": "my-template.html#progress-with-literature-review-p0-8",
+    "title": "Progress Review - January",
+    "section": "Progress with Literature Review (P0)",
+    "text": "Progress with Literature Review (P0)\n\nUse visual analytics as a tool to extract visualization methods used for geospatial analysis\nSome examples:\n\nObservable Notebook by ‘@Fil’ (Data up to 2021)\nKeyvis (Isenberg, 2017)\nObservable Notebook by John Guerra (Data up to 2020)"
+  },
+  {
+    "objectID": "my-template.html#progress-with-literature-review-p0-9",
+    "href": "my-template.html#progress-with-literature-review-p0-9",
+    "title": "Progress Review - January",
+    "section": "Progress with Literature Review (P0)",
+    "text": "Progress with Literature Review (P0)\nIdeas:\n\nBuild a ‘proper’ database and website consisting of the original Isenberg dataset and allows registered users to add more data to the database\nUse LLMs to extract information during literature review/visual analytics process\nA rough example\nA literate programming approach for literature review: A WIP"
+  },
+  {
+    "objectID": "my-template.html#progress-with-literature-review-p1",
+    "href": "my-template.html#progress-with-literature-review-p1",
+    "title": "Progress Review - January",
+    "section": "Progress with Literature Review (P1)",
+    "text": "Progress with Literature Review (P1)\n\nLots of papers discussing about Glyph (Borgo, et.al., 2012; Ward, 2008; Fuchs, 2017, etc..)\nHighly varied in terms of method and visualization design\ncould start from the Isenberg Vispub dataset for review"
+  },
+  {
+    "objectID": "my-template.html#progress-with-geovisualization-platform",
+    "href": "my-template.html#progress-with-geovisualization-platform",
+    "title": "Progress Review - January",
+    "section": "Progress with geovisualization platform",
+    "text": "Progress with geovisualization platform\nHad a meeting with Lily, discussing about AITL’s visualization needs. Some key takeaways:\nI will be involved in some client meetings to better understand their needs\nThe three main actors (’users’):\n\nLocal Authorities\nDNOs\nConsultants"
+  },
+  {
+    "objectID": "my-template.html#progress-with-geovisualization-platform-1",
+    "href": "my-template.html#progress-with-geovisualization-platform-1",
+    "title": "Progress Review - January",
+    "section": "Progress with geovisualization platform",
+    "text": "Progress with geovisualization platform\nTwo problems that AITL tries to tackle regarding data:\n\nHow to model the network needs in a lower granularity (e.g. Building level, by DNOs)\nHow to model decision making in a higher level granularity (local authorities)"
+  },
+  {
+    "objectID": "my-template.html#progress-with-geovisualization-platform-2",
+    "href": "my-template.html#progress-with-geovisualization-platform-2",
+    "title": "Progress Review - January",
+    "section": "Progress with geovisualization platform",
+    "text": "Progress with geovisualization platform\n\nAITL has been developing a Dashboard and Data stories platform\nSome GIS problems which requires visualization design decision"
+  },
+  {
+    "objectID": "my-template.html#action-points",
+    "href": "my-template.html#action-points",
+    "title": "Progress Review - January",
+    "section": "Action points",
+    "text": "Action points\n\nWrite up the P0 paper based on the ideas as mentioned\nStart a literature review on P1\nWorking on the platform as discussed with AITL"
+  },
+  {
+    "objectID": "assemble/CONTRIBUTING.html",
+    "href": "assemble/CONTRIBUTING.html",
+    "title": "Presentations",
+    "section": "",
+    "text": "Please keep the issue tracker limited to bug reports, feature requests and pull requests.\n\n\nIf you have personal support or setup questions the best place to ask those are StackOverflow.\n\n\n\nWhen reporting a bug make sure to include information about which browser and operating system you are on as well as the necessary steps to reproduce the issue. If possible please include a link to a sample presentation where the bug can be tested.\n\n\n\n\nShould follow the coding style of the file you work in, most importantly:\n\nTabs to indent\nSingle-quoted strings\n\nShould be made towards the dev branch\nShould be submitted from a feature/topic branch (not your master)\n\n\n\n\nPlease do not submit plugins as pull requests. They should be maintained in their own separate repository. More information here: https://github.com/hakimel/reveal.js/wiki/Plugin-Guidelines"
+  },
+  {
+    "objectID": "assemble/CONTRIBUTING.html#contributing",
+    "href": "assemble/CONTRIBUTING.html#contributing",
+    "title": "Presentations",
+    "section": "",
+    "text": "Please keep the issue tracker limited to bug reports, feature requests and pull requests.\n\n\nIf you have personal support or setup questions the best place to ask those are StackOverflow.\n\n\n\nWhen reporting a bug make sure to include information about which browser and operating system you are on as well as the necessary steps to reproduce the issue. If possible please include a link to a sample presentation where the bug can be tested.\n\n\n\n\nShould follow the coding style of the file you work in, most importantly:\n\nTabs to indent\nSingle-quoted strings\n\nShould be made towards the dev branch\nShould be submitted from a feature/topic branch (not your master)\n\n\n\n\nPlease do not submit plugins as pull requests. They should be maintained in their own separate repository. More information here: https://github.com/hakimel/reveal.js/wiki/Plugin-Guidelines"
+  },
+  {
+    "objectID": "cgvc2025/index.html#section",
+    "href": "cgvc2025/index.html#section",
+    "title": "Presentations",
+    "section": ":",
+    "text": ":"
+  },
+  {
+    "objectID": "cgvc2025/index.html#t1-identify-cohorts",
+    "href": "cgvc2025/index.html#t1-identify-cohorts",
+    "title": "Presentations",
+    "section": "T1: Identify Cohorts",
+    "text": "T1: Identify Cohorts\n\nUse the linked Table and Map views to select specific groups of buildings for intervention"
+  }
+]

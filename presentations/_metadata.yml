@@ -1,0 +1,10 @@
+format:
+  revealjs:
+    theme: simple
+    slide-number: true
+    controls: true
+    progress: true
+    incremental: false
+    width: 1280
+    height: 720
+

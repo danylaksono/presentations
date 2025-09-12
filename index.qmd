@@ -1,0 +1,13 @@
+---
+title: "Presentations"
+listing:
+  contents: presentations
+  type: table
+  sort: "date desc"
+  fields: [title, date, categories, description]
+---
+
+Welcome! This site hosts slide decks built with Quarto Revealjs. See the table above for available decks.
+
+To add a new deck, create a new `.qmd` file under `presentations/` (you can copy `presentations/example.qmd`).
+

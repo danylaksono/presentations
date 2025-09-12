@@ -1,0 +1,36 @@
+---
+title: "Sample Deck"
+author: "Dany Laksono"
+date: "2025-09-11"
+description: "Example revealjs deck in this Quarto project."
+categories: [example]
+---
+
+## Getting Started
+
+- This is a sample slide
+- Edit or duplicate this to create your own
+
+---
+
+## Columns
+
+:::: {.columns}
+::: {.column width="40%"}
+Left content
+:::
+::: {.column width="60%"}
+Right content
+:::
+::::
+
+---
+
+## Incremental List
+
+::: {.incremental}
+- First
+- Second
+- Third
+:::
+
