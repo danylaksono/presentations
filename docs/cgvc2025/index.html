@@ -212,75 +212,29 @@
 </figure>
 </div>
 </div></div>
+<div style="text-align: right;">
+<p><span class="fragment">We identified some <span class="highlight-gold">limitations</span> with this approach.</span></p>
+</div>
 </section>
-<section id="the-gap-in-existing-tools" class="slide level2 center">
-<h2>The Gap in Existing Tools</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<h3 id="traditional-gis">Traditional GIS</h3>
-<p><img data-src="https://placehold.co/400x300/E8F5E9/4CAF50?text=Stacked+Map+Layers.png"></p>
-<figcaption>
-The ‘map layer metaphor’ increases cognitive load by forcing users to mentally integrate fragmented information.
-</figcaption>
-</div><div class="column" style="width:50%;">
-<h3 id="black-box-optimisation">‘Black Box’ Optimisation</h3>
-<p><img data-src="https://placehold.co/400x300/F3E5F5/9C27B0?text=Black+Box+Model.png"></p>
-<figcaption>
-Monolithic optimisation models hide the trade-offs inherent in the planning process.
-</figcaption>
-</div></div>
-<aside class="notes">
-<p>Traditional GIS forces users to flip between layers; black-box optimisation hides trade-offs and the “why” behind results.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="why-simulation-not-just-optimisation" class="slide level2 center">
-<h2>Why Simulation, Not Just Optimisation?</h2>
-<p>For a ‘wicked problem’, the goal is not a single optimal answer, but to explore a range of plausible and defensible futures.</p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<h4 id="optimisation">Optimisation</h4>
+<section class="slide level2 center">
+
+<p><strong>First</strong>, the monolithic optimisation models hide the trade-offs inherent in the planning process.</p>
 <ul>
-<li class="fragment">Asks: “What is the best solution?”</li>
-<li class="fragment">Finds a single, mathematically optimal result.</li>
-<li class="fragment">Treats qualitative goals as rigid constraints.</li>
-<li class="fragment">Hides inherent trade-offs inside the model.</li>
+<li class="fragment">it is <span class="highlight-gold">slow</span>. The model can take hours (or even a day) to run.</li>
+<li class="fragment">it is <span class="highlight-gold">not transparent</span> to the user. The user cannot see the trade-offs inherent in the planning process.</li>
+<li class="fragment">it often fails to model the <span class="highlight-gold">complex interactions</span> between different factors in real-world scenarios.</li>
 </ul>
-</div><div class="column" style="width:50%;">
-<h4 id="simulation-our-approach">Simulation (Our Approach)</h4>
+<p><strong>Second</strong>, the choropleth map layer metaphor increases cognitive load by forcing users to mentally integrate fragmented information.</p>
 <ul>
-<li class="fragment">Asks: “If we do X, what happens?”</li>
-<li class="fragment">Enables multiple what-if scenarios.</li>
-<li class="fragment">Augments human judgment for complex goals.</li>
-<li class="fragment">Makes trade-offs explicit and visible.</li>
+<li class="fragment">it is <span class="highlight-gold">complicated to interpret</span> the results of the model.</li>
+<li class="fragment">it is not capturing the nuances of <span class="highlight-gold">multi-scale</span> decarbonisation data.</li>
+<li class="fragment"><span class="highlight-gold">temporal dynamics</span> are not well represented in the choropleth map.</li>
+<li class="fragment">moreover, comparison between multiple <span class="highlight-gold">administrative areas</span> is difficult.</li>
 </ul>
-</div></div>
-<aside class="notes">
-<p>We ask a different question: “If we make this decision, what happens?” It augments expert judgment and makes trade-offs explicit.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
 </section>
-<section id="our-contribution-a-human-in-the-loop-paradigm" class="slide level2 center">
-<h2>Our Contribution: A Human-in-the-Loop Paradigm</h2>
-<p>We built a visual analytics system on three core contributions to enable this exploratory process.</p>
+<section id="our-approach-a-human-in-the-loop-paradigm" class="slide level2 center">
+<h2>Our Approach: A Human-in-the-Loop Paradigm</h2>
+<p>We ask a different question: “<em>If we make this decision, what happens?</em>”.</p>
 <ol type="1">
 <li class="fragment">Modular, Component-Based Planning<br>
 <small>Decomposes complex strategy-building into manageable, interpretable parts.</small></li>
@@ -289,14 +243,22 @@ Monolithic optimisation models hide the trade-offs inherent in the planning proc
 <li class="fragment">An Integrated, Iterative Workflow<br>
 <small>Tightly couples data exploration, simulation, and outcome analysis for real-time feedback.</small></li>
 </ol>
+<div class="fragment">
+<p>By enabling <u>an exploratory process with visual analytics</u>, it <span class="highlight-green">augments expert judgment</span> and makes trade-offs explicit.</p>
+</div>
 </section>
 <section id="the-decarbonisation-planner" class="slide level2 center">
 <h2>The Decarbonisation Planner</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="./assets/thedashboard.png"></p>
+<figcaption>The main interface integrates intervention authoring, data tables, a scenario timeline, and a glyph-map for outcome analysis.</figcaption>
+</figure>
+</div>
 
-<img data-src="https://placehold.co/800x450/E1F5FE/03A9F4?text=Figure+1:+Dashboard.png" class="r-stretch"><figcaption>
-The main interface integrates intervention authoring, data tables, a scenario timeline, and a glyph-map for outcome analysis.
-</figcaption>
-</section>
+<aside><div>
+<p><a href="https://decarb-vis.netlify.app/">https://decarb-vis.netlify.app/</a></p>
+</div></aside></section>
 <section id="a-workflow-for-policy-exploration" class="slide level2 center">
 <h2>A Workflow for Policy Exploration</h2>
 <p>Our system supports an iterative, four-step process (T1-T4):</p>
@@ -313,8 +275,8 @@ The main interface integrates intervention authoring, data tables, a scenario ti
 </section>
 <section id="visualising-complex-trade-offs-with-glyphs" class="slide level2 center">
 <h2>Visualising Complex Trade-offs with Glyphs</h2>
-
-<img data-src="https://placehold.co/800x400/FFF3E0/FF9800?text=Figure+3:+Glyph+Designs.png" class="r-stretch"><figcaption>
+<p><img data-src=".assets/thedashboard.png" height="400"></p>
+<figcaption>
 Left: radial glyph for multi-attribute potential. Right: mirrored streamgraph showing Carbon Saved (green) vs.&nbsp;Cost (red) over time.
 </figcaption>
 </section>

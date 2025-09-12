@@ -110,68 +110,30 @@ Developing effective and equitable decarbonisation plans is a complex balancing 
 :::
 :::
 
-
-
-
----
-
-## The Gap in Existing Tools
-
-:::: {.columns}
-::: {.column width="50%"}
-### Traditional GIS
-
-![](https://placehold.co/400x300/E8F5E9/4CAF50?text=Stacked+Map+Layers)
-
-<figcaption>The 'map layer metaphor' increases cognitive load by forcing users to mentally integrate fragmented information.</figcaption>
-:::
-::: {.column width="50%"}
-### 'Black Box' Optimisation
-
-![](https://placehold.co/400x300/F3E5F5/9C27B0?text=Black+Box+Model)
-
-<figcaption>Monolithic optimisation models hide the trade-offs inherent in the planning process.</figcaption>
-:::
-::::
-
-::: {.notes}
-Traditional GIS forces users to flip between layers; black-box optimisation hides trade-offs and the "why" behind results.
-:::
+<div style="text-align: right;">
+  <span class="fragment">We identified some <span class="highlight-gold">limitations</span> with this approach.</span>
+</div>
 
 ---
 
-## Why Simulation, Not Just Optimisation?
+**First**, the monolithic optimisation models hide the trade-offs inherent in the planning process.
 
-For a 'wicked problem', the goal is not a single optimal answer, but to explore a range of plausible and defensible futures.
+- it is [slow]{.highlight-gold}. The model can take hours (or even a day) to run.
+- it is [not transparent]{.highlight-gold} to the user. The user cannot see the trade-offs inherent in the planning process.
+- it often fails to model the [complex interactions]{.highlight-gold} between different factors in real-world scenarios.
 
-:::: {.columns}
-::: {.column width="50%"}
-#### Optimisation
+**Second**, the choropleth map layer metaphor increases cognitive load by forcing users to mentally integrate fragmented information.
 
-- Asks: "What is the best solution?"
-- Finds a single, mathematically optimal result.
-- Treats qualitative goals as rigid constraints.
-- Hides inherent trade-offs inside the model.
-:::
-::: {.column width="50%"}
-#### Simulation (Our Approach)
-
-- Asks: "If we do X, what happens?"
-- Enables multiple what-if scenarios.
-- Augments human judgment for complex goals.
-- Makes trade-offs explicit and visible.
-:::
-::::
-
-::: {.notes}
-We ask a different question: "If we make this decision, what happens?" It augments expert judgment and makes trade-offs explicit.
-:::
+- it is [complicated to interpret]{.highlight-gold} the results of the model.
+- it is not capturing the nuances of [multi-scale]{.highlight-gold} decarbonisation data.
+- [temporal dynamics]{.highlight-gold} are not well represented in the choropleth map. 
+- moreover, comparison between multiple [administrative areas]{.highlight-gold} is difficult.
 
 ---
 
-## Our Contribution: A Human-in-the-Loop Paradigm
+## Our Approach: A Human-in-the-Loop Paradigm
 
-We built a visual analytics system on three core contributions to enable this exploratory process.
+We ask a different question: "_If we make this decision, what happens?_". 
 
 1. Modular, Component-Based Planning  
    <small>Decomposes complex strategy-building into manageable, interpretable parts.</small>
@@ -180,14 +142,18 @@ We built a visual analytics system on three core contributions to enable this ex
 3. An Integrated, Iterative Workflow  
    <small>Tightly couples data exploration, simulation, and outcome analysis for real-time feedback.</small>
 
+:::{.fragment}   
+By enabling [an exploratory process with visual analytics]{.underline}, it [augments expert judgment]{.highlight-green} and makes trade-offs explicit.
+:::
 ---
 
 ## The Decarbonisation Planner
 
-![](https://placehold.co/800x450/E1F5FE/03A9F4?text=Figure+1:+Dashboard)
+![The main interface integrates intervention authoring, data tables, a scenario timeline, and a glyph-map for outcome analysis.](./assets/thedashboard.png)
 
-<figcaption>The main interface integrates intervention authoring, data tables, a scenario timeline, and a glyph-map for outcome analysis.</figcaption>
-
+:::{.aside}
+[https://decarb-vis.netlify.app/](https://decarb-vis.netlify.app/)
+:::
 ---
 
 ## A Workflow for Policy Exploration
@@ -207,7 +173,7 @@ Our system supports an iterative, four-step process (T1-T4):
 
 ## Visualising Complex Trade-offs with Glyphs
 
-![](https://placehold.co/800x400/FFF3E0/FF9800?text=Figure+3:+Glyph+Designs)
+![](.assets/thedashboard.png){height=400}
 
 <figcaption>Left: radial glyph for multi-attribute potential. Right: mirrored streamgraph showing Carbon Saved (green) vs. Cost (red) over time.</figcaption>
 

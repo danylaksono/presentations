@@ -49,32 +49,18 @@
     "text": "The Challenge:\nDeveloping effective and equitable decarbonisation plans is a complex balancing act for UK local authorities.\n\n\nThey must balance:\n\nTechnical factors (Carbon reduction)\nEconomic factors (Costs, budgets)\nSocial factors (Fuel poverty, equity)\n\n\n…exacerbated by:\n\nConflicting stakeholder priorities.\nMassive, multivariate datasets.\nNo single ‘optimal’ solution.\n\n\n\nThis is a wicked problem in decision making."
   },
   {
-    "objectID": "cgvc2025/index.html#the-gap-in-existing-tools",
-    "href": "cgvc2025/index.html#the-gap-in-existing-tools",
+    "objectID": "cgvc2025/index.html#our-approach-a-human-in-the-loop-paradigm",
+    "href": "cgvc2025/index.html#our-approach-a-human-in-the-loop-paradigm",
     "title": "Presentations",
-    "section": "The Gap in Existing Tools",
-    "text": "The Gap in Existing Tools\n\n\nTraditional GIS\n\n\nThe ‘map layer metaphor’ increases cognitive load by forcing users to mentally integrate fragmented information.\n\n\n‘Black Box’ Optimisation\n\n\nMonolithic optimisation models hide the trade-offs inherent in the planning process.\n\n\n\nTraditional GIS forces users to flip between layers; black-box optimisation hides trade-offs and the “why” behind results."
-  },
-  {
-    "objectID": "cgvc2025/index.html#why-simulation-not-just-optimisation",
-    "href": "cgvc2025/index.html#why-simulation-not-just-optimisation",
-    "title": "Presentations",
-    "section": "Why Simulation, Not Just Optimisation?",
-    "text": "Why Simulation, Not Just Optimisation?\nFor a ‘wicked problem’, the goal is not a single optimal answer, but to explore a range of plausible and defensible futures.\n\n\nOptimisation\n\nAsks: “What is the best solution?”\nFinds a single, mathematically optimal result.\nTreats qualitative goals as rigid constraints.\nHides inherent trade-offs inside the model.\n\n\nSimulation (Our Approach)\n\nAsks: “If we do X, what happens?”\nEnables multiple what-if scenarios.\nAugments human judgment for complex goals.\nMakes trade-offs explicit and visible.\n\n\n\nWe ask a different question: “If we make this decision, what happens?” It augments expert judgment and makes trade-offs explicit."
-  },
-  {
-    "objectID": "cgvc2025/index.html#our-contribution-a-human-in-the-loop-paradigm",
-    "href": "cgvc2025/index.html#our-contribution-a-human-in-the-loop-paradigm",
-    "title": "Presentations",
-    "section": "Our Contribution: A Human-in-the-Loop Paradigm",
-    "text": "Our Contribution: A Human-in-the-Loop Paradigm\nWe built a visual analytics system on three core contributions to enable this exploratory process.\n\nModular, Component-Based Planning\nDecomposes complex strategy-building into manageable, interpretable parts.\nMulti-Scale, Glyph-Based Visualisation\nRepresents multivariate and temporal data uniformly across geographic scales.\nAn Integrated, Iterative Workflow\nTightly couples data exploration, simulation, and outcome analysis for real-time feedback."
+    "section": "Our Approach: A Human-in-the-Loop Paradigm",
+    "text": "Our Approach: A Human-in-the-Loop Paradigm\nWe ask a different question: “If we make this decision, what happens?”.\n\nModular, Component-Based Planning\nDecomposes complex strategy-building into manageable, interpretable parts.\nMulti-Scale, Glyph-Based Visualisation\nRepresents multivariate and temporal data uniformly across geographic scales.\nAn Integrated, Iterative Workflow\nTightly couples data exploration, simulation, and outcome analysis for real-time feedback.\n\n\nBy enabling an exploratory process with visual analytics, it augments expert judgment and makes trade-offs explicit."
   },
   {
     "objectID": "cgvc2025/index.html#the-decarbonisation-planner",
     "href": "cgvc2025/index.html#the-decarbonisation-planner",
     "title": "Presentations",
     "section": "The Decarbonisation Planner",
-    "text": "The Decarbonisation Planner\n\n\nThe main interface integrates intervention authoring, data tables, a scenario timeline, and a glyph-map for outcome analysis."
+    "text": "The Decarbonisation Planner\n\n\n\nThe main interface integrates intervention authoring, data tables, a scenario timeline, and a glyph-map for outcome analysis.\n\n\n\n\nhttps://decarb-vis.netlify.app/"
   },
   {
     "objectID": "cgvc2025/index.html#a-workflow-for-policy-exploration",
