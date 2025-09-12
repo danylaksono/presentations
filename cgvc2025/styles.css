@@ -30,7 +30,11 @@
 .reveal p, .reveal li { line-height: 1.5; }
 
 .reveal strong { font-weight: 700; color: var(--color-text-heading); }
+
+.highlight-blue { font-weight: 700; color: #1565C0; } /* Primary Blue */
 .highlight-gold { font-weight: 700; color: var(--color-highlight); }
+.highlight-green { font-weight: 700; color: #43A047; } /* Success Green */
+.highlight-red { font-weight: 700; color: #D32F2F; } /* Error Red */
 
 .reveal .columns {
   display: flex;

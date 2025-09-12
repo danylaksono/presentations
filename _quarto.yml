@@ -1,16 +1,19 @@
 project:
   type: website
+  output-dir: docs
+  preview: 
+    port: 4200
   resources:
-    - cgvc2025/**
+    - cgvc2025_backup/**
 
 website:
   title: "Presentations"
-  navbar:
-    left:
-      - text: "Home"
-        href: index.qmd
-      - text: "Presentations"
-        href: presentations/index.qmd
+  # navbar:
+  #   left:
+  #     - text: "Home"
+  #       href: index.qmd
+  #     - text: "Presentations"
+  #       href: presentations/index.qmd
 
 format:
   html:

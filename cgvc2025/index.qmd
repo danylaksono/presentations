@@ -98,6 +98,23 @@ Developing effective and equitable decarbonisation plans is a complex balancing 
 
 ---
 
+**Current approaches**: An optimisation-based model for decarbonisation planning to support Local Authority decision-making:
+
+:::{.columns}
+::: {.column width="50%"}
+![A model which optimises budget availability, LCT suitability, and emissions reduction potential](./assets/scenario_charts.png){height=250}
+
+:::
+::: {.column width="50%"}
+![Multivariate, spatio-temporal data visualised as choropleth maps](./assets/scenario_mapview.png){height=250}
+:::
+:::
+
+
+
+
+---
+
 ## The Gap in Existing Tools
 
 :::: {.columns}

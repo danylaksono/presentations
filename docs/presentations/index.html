@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head>
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-html/tabby.min.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -9,7 +11,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.8.24">
 
-  <title>Presentations – index</title>
+  <title>Presentations</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -29,7 +31,35 @@
     }
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-0fde88a82f0356838740f155f1088782.css">
-  <link rel="stylesheet" href="styles.css">
+  <script>
+
+    window.document.addEventListener("DOMContentLoaded", function (_event) {
+      const listingTargetEl = window.document.querySelector('#listing-listing .list');
+      if (!listingTargetEl) {
+        // No listing discovered, do not attach.
+        return; 
+      }
+
+      const options = {
+        valueNames: ['listing-title','listing-date','listing-categories','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+        
+        searchColumns: ["listing-date","listing-title","listing-author"],
+      };
+
+      window['quarto-listings'] = window['quarto-listings'] || {};
+      window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+      if (window['quarto-listing-loaded']) {
+        window['quarto-listing-loaded']();
+      }
+    });
+
+    window.addEventListener('hashchange',() => {
+      if (window['quarto-listing-loaded']) {
+        window['quarto-listing-loaded']();
+      }
+    })
+    </script>
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -121,252 +151,29 @@
       margin-right: 0; 
     }
   </style>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&amp;display=swap" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
     <div class="slides">
 
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Presentations</h1>
 
-<section class="slide level2 center">
-
-<!-- 
-<h1> Interactive Visual Analytics<br>for Local Decarbonisation Planning </h1>
-
-<h2> Empowering Policy‑Aligned Scenario Exploration </h2>
-
-<hr>
-
-<h3> D. Laksono, R. Jianu, &amp; A. Slingsby </h3>
-<h4> City, University of London </h4>
-
-<br>
-
-<h3> Live Demo: <a href="https://decarb-vis.netlify.app">decarb-vis.netlify.app</a> &nbsp;&nbsp; Source: <a href="https://github.com/danylaksono/decarbonisation-glyphmap-planner">GitHub</a></h3> -->
-<!-- 
-![](../cgvc2025/assets/citystgeorgelogo.png){.absolute top=290 left=1000 width="200"}
-![](../cgvc2025/assets/giCentrelogo.webp){.absolute top=425 left=1000 width="200"}
-![](../cgvc2025/assets/ai_logo.png){.absolute top=500 left=1010 height="65"} -->
-  <div style="min-height:100%; display:flex; justify-content:center; align-items:center; position: relative;">
-    <!-- <div class="logo-group-top-right">
-      <img src="../cgvc2025/assets/citystgeorgelogo.png" alt="City St George's Logo">
-      <img src="../cgvc2025/assets/giCentrelogo.webp" alt="giCentre Logo">
-      <img src="../cgvc2025/assets/ai_logo.png" alt="AI Logo">
-    </div> -->
-    <div style="width:100%; text-align:center;">
-      <h1>Interactive Visual Analytics for Local Decarbonisation Planning</h1>
-      <p style="font-size: 1.2em;">Empowering Policy-Aligned Scenario Exploration</p>
-      <hr>
-      <p><strong>Dany Laksono, Radu Jianu &amp; Aidan Slingsby</strong></p>
-      <p><small>City St. George's, University of London</small></p>
-      </div>
-   </div>
-</section>
-<section class="slide level2 center">
-
-<div class="center">
-<p>With the 2050 deadline looming, the UK’s pursuit of its <span class="highlight-gold">net zero target</span> is a contentious journey marked by legal and technical challenges, <strong>the delegation of complex decarbonisation decisions to frontline local authorities</strong>, and ongoing debate over the pace and feasibility of the transition.</p>
+<div class="quarto-title-authors">
 </div>
-</section>
-<section id="the-challenge" class="slide level2 center">
-<h2>The Challenge:</h2>
-<p>Developing effective and equitable decarbonisation plans is a complex balancing act for UK local authorities.</p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<h4 id="they-must-balance">They must balance:</h4>
-<ul>
-<li class="fragment">Technical factors (Carbon reduction)</li>
-<li class="fragment">Economic factors (Costs, budgets)</li>
-<li class="fragment">Social factors (Fuel poverty, equity)</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<h4 id="exacerbated-by">…exacerbated by:</h4>
-<ul>
-<li class="fragment">Conflicting stakeholder priorities.</li>
-<li class="fragment">Massive, multivariate datasets.</li>
-<li class="fragment">No single ‘optimal’ solution.</li>
-</ul>
-</div></div>
-<div style="text-align: right;">
-<p><span class="fragment">This is a <span class="highlight-gold">wicked problem</span> in decision making.</span></p>
-</div>
-</section>
-<section class="slide level2 center">
 
-<p><strong>Current approaches</strong>: An optimisation-based model for decarbonisation planning to support Local Authority decision-making:</p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="./assets/scenario_charts.png" height="250"></p>
-<figcaption>A model which optimises budget availability, LCT suitability, and emissions reduction potential</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="./assets/scenario_mapview.png" height="250"></p>
-<figcaption>Multivariate, spatio-temporal data visualised as choropleth maps</figcaption>
-</figure>
-</div>
-</div></div>
 </section>
-<section id="the-gap-in-existing-tools" class="slide level2 center">
-<h2>The Gap in Existing Tools</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<h3 id="traditional-gis">Traditional GIS</h3>
-<p><img data-src="https://placehold.co/400x300/E8F5E9/4CAF50?text=Stacked+Map+Layers.png"></p>
-<figcaption>
-The ‘map layer metaphor’ increases cognitive load by forcing users to mentally integrate fragmented information.
-</figcaption>
-</div><div class="column" style="width:50%;">
-<h3 id="black-box-optimisation">‘Black Box’ Optimisation</h3>
-<p><img data-src="https://placehold.co/400x300/F3E5F5/9C27B0?text=Black+Box+Model.png"></p>
-<figcaption>
-Monolithic optimisation models hide the trade-offs inherent in the planning process.
-</figcaption>
-</div></div>
-<aside class="notes">
-<p>Traditional GIS forces users to flip between layers; black-box optimisation hides trade-offs and the “why” behind results.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="why-simulation-not-just-optimisation" class="slide level2 center">
-<h2>Why Simulation, Not Just Optimisation?</h2>
-<p>For a ‘wicked problem’, the goal is not a single optimal answer, but to explore a range of plausible and defensible futures.</p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<h4 id="optimisation">Optimisation</h4>
-<ul>
-<li class="fragment">Asks: “What is the best solution?”</li>
-<li class="fragment">Finds a single, mathematically optimal result.</li>
-<li class="fragment">Treats qualitative goals as rigid constraints.</li>
-<li class="fragment">Hides inherent trade-offs inside the model.</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<h4 id="simulation-our-approach">Simulation (Our Approach)</h4>
-<ul>
-<li class="fragment">Asks: “If we do X, what happens?”</li>
-<li class="fragment">Enables multiple what-if scenarios.</li>
-<li class="fragment">Augments human judgment for complex goals.</li>
-<li class="fragment">Makes trade-offs explicit and visible.</li>
-</ul>
-</div></div>
-<aside class="notes">
-<p>We ask a different question: “If we make this decision, what happens?” It augments expert judgment and makes trade-offs explicit.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="our-contribution-a-human-in-the-loop-paradigm" class="slide level2 center">
-<h2>Our Contribution: A Human-in-the-Loop Paradigm</h2>
-<p>We built a visual analytics system on three core contributions to enable this exploratory process.</p>
-<ol type="1">
-<li class="fragment">Modular, Component-Based Planning<br>
-<small>Decomposes complex strategy-building into manageable, interpretable parts.</small></li>
-<li class="fragment">Multi-Scale, Glyph-Based Visualisation<br>
-<small>Represents multivariate and temporal data uniformly across geographic scales.</small></li>
-<li class="fragment">An Integrated, Iterative Workflow<br>
-<small>Tightly couples data exploration, simulation, and outcome analysis for real-time feedback.</small></li>
-</ol>
-</section>
-<section id="the-decarbonisation-planner" class="slide level2 center">
-<h2>The Decarbonisation Planner</h2>
+<section class="slide level2">
 
-<img data-src="https://placehold.co/800x450/E1F5FE/03A9F4?text=Figure+1:+Dashboard.png" class="r-stretch"><figcaption>
-The main interface integrates intervention authoring, data tables, a scenario timeline, and a glyph-map for outcome analysis.
-</figcaption>
-</section>
-<section id="a-workflow-for-policy-exploration" class="slide level2 center">
-<h2>A Workflow for Policy Exploration</h2>
-<p>Our system supports an iterative, four-step process (T1-T4):</p>
-<ol type="1">
-<li class="fragment">Identify &amp; Characterise Cohorts (T1)<br>
-<small>Use linked map and table to filter and select groups of buildings.</small></li>
-<li class="fragment">Author Scenarios via Composition (T2)<br>
-<small>Define and layer modular plan components on the timeline.</small></li>
-<li class="fragment">Compare Spatio-Temporal Outcomes (T3)<br>
-<small>Instantly simulate impacts and visualise them on the glyph-map.</small></li>
-<li class="fragment">Explore Alternatives through Iteration (T4)<br>
-<small>Adjust parameters, re-order components, and immediately see the results.</small></li>
-</ol>
-</section>
-<section id="visualising-complex-trade-offs-with-glyphs" class="slide level2 center">
-<h2>Visualising Complex Trade-offs with Glyphs</h2>
-
-<img data-src="https://placehold.co/800x400/FFF3E0/FF9800?text=Figure+3:+Glyph+Designs.png" class="r-stretch"><figcaption>
-Left: radial glyph for multi-attribute potential. Right: mirrored streamgraph showing Carbon Saved (green) vs.&nbsp;Cost (red) over time.
-</figcaption>
-</section>
-<section id="managing-scale-analytical-clarity" class="slide level2 center">
-<h2>Managing Scale &amp; Analytical Clarity</h2>
-
-<img data-src="https://placehold.co/800x450/E8EAF6/3F51B5?text=Figure+2:+Multi-scale+View.png" class="r-stretch"><figcaption>
-Data is represented consistently across scales. Geography can be ‘squarified’ to give areas equal visual prominence.
-</figcaption>
-</section>
-<section id="merits-limitations" class="slide level2 center">
-<h2>Merits &amp; Limitations</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<h3 id="merits">Merits</h3>
-<ul>
-<li class="fragment">Transparent &amp; interpretable</li>
-<li class="fragment">Reduces cognitive load</li>
-<li class="fragment">Fosters iteration &amp; dialogue</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<h3 id="limitations">Limitations</h3>
-<ul>
-<li class="fragment">Need for formal evaluation</li>
-<li class="fragment">Model simplification</li>
-<li class="fragment">Scalability</li>
-</ul>
-</div></div>
-</section>
-<section id="conclusion-future-work" class="slide level2 center">
-<h2>Conclusion &amp; Future Work</h2>
-<p>We reframed decarbonisation planning from a rigid, monolithic process into a transparent, flexible, and iterative dialogue.</p>
-<p>Future work:</p>
-<ol type="1">
-<li class="fragment">Conduct contextual user studies</li>
-<li class="fragment">Enhance simulation fidelity</li>
-<li class="fragment">Develop side-by-side scenario comparison</li>
-</ol>
-</section>
-<section id="thank-you" class="slide level2 center">
-<h2>Thank You</h2>
-<p><strong>D. Laksono, R. Jianu, &amp; A. Slingsby</strong></p>
-<p><strong>Live Demo:</strong> <a href="https://decarb-vis.netlify.app" class="uri">https://decarb-vis.netlify.app</a></p>
-<p><strong>Source Code:</strong> <a href="https://github.com/danylaksono/decarbonisation-glyphmap-planner" class="uri">https://github.com/danylaksono/decarbonisation-glyphmap-planner</a></p>
-</section>
+<p>All slide decks in this directory are listed above.</p>
 
 
 
+</section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
-<p><a href="danylaksono.github.io/presentations/cgvc2025/">danylaksono.github.io/presentations/cgvc2025/</a></p>
+
 </div>
 </div></div>
 
@@ -391,7 +198,7 @@ Data is represented consistently across scales. Geography can be ‘squarified�
       // Full list of configuration options available at:
       // https://revealjs.com/config/
       Reveal.initialize({
-'controlsAuto': true,
+'controlsAuto': false,
 'previewLinksAuto': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
@@ -402,7 +209,7 @@ Data is represented consistently across scales. Geography can be ‘squarified�
 'smaller': false,
  
         // Display controls in the bottom right corner
-        controls: false,
+        controls: true,
 
         // Help the user learn the controls by providing hints, for example by
         // bouncing the down arrow when they first encounter a vertical slide
@@ -448,7 +255,7 @@ Data is represented consistently across scales. Geography can be ‘squarified�
         disableLayout: false,
 
         // Vertical centering of slides
-        center: true,
+        center: false,
 
         // Enables touch navigation on devices with touch input
         touch: true,
@@ -524,14 +331,14 @@ Data is represented consistently across scales. Geography can be ‘squarified�
         previewLinks: false,
 
         // Transition style (none/fade/slide/convex/concave/zoom)
-        transition: 'slide',
+        transition: 'none',
 
         // Transition speed (default/fast/slow)
         transitionSpeed: 'default',
 
         // Transition style for full page slide backgrounds
         // (none/fade/slide/convex/concave/zoom)
-        backgroundTransition: 'fade',
+        backgroundTransition: 'none',
 
         // Number of slides away from the current that are visible
         viewDistance: 3,
@@ -544,9 +351,9 @@ Data is represented consistently across scales. Geography can be ‘squarified�
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
-        width: 1050,
+        width: 1280,
 
-        height: 700,
+        height: 720,
 
         // Factor of the display size that should remain empty around the content
         margin: 0.1,
@@ -748,4 +555,70 @@ Data is represented consistently across scales. Geography can be ‘squarified�
       </script>
     
 
-</body></html>
+<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+    <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+      <option value="" disabled="" selected="" hidden="">Order By</option>
+      <option value="index" data-direction="asc">Default</option>
+      <option value="listing-date-sort" data-direction="asc">
+        Date - Oldest
+      </option>
+      <option value="listing-date-sort" data-direction="desc">
+        Date - Newest
+      </option>
+      <option value="listing-title-sort" data-direction="asc">
+        Title
+      </option>
+    </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+
+<th>
+<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
+</th>
+
+<th>
+<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
+</th>
+
+<th>
+Categories
+</th>
+
+<th>
+Description
+</th>
+
+</tr>
+</thead>
+<tbody class="list">
+
+<tr data-index="0" data-categories="ZXhhbXBsZQ==" data-listing-date-sort="1757545200000" data-listing-file-modified-sort="1757589504188" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="28" data-listing-title-sort="Sample Deck" data-listing-filename-sort="example.qmd">
+<td>
+<a href="../presentations/example.html" class="title listing-title">Sample Deck</a>
+</td>
+<td>
+<span class="listing-date">Sep 11, 2025</span>
+</td>
+<td>
+<span class="listing-categories">example</span>
+</td>
+<td>
+<span class="listing-description">Example revealjs deck in this Quarto project.</span>
+</td>
+
+</tr>
+
+</tbody>
+</table>
+<div class="listing-no-matching d-none">No matching items</div>
+</div></body></html>
