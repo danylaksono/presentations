@@ -292,5 +292,12 @@
     "title": "Presentations",
     "section": "",
     "text": "Please keep the issue tracker limited to bug reports, feature requests and pull requests.\n\n\nIf you have personal support or setup questions the best place to ask those are StackOverflow.\n\n\n\nWhen reporting a bug make sure to include information about which browser and operating system you are on as well as the necessary steps to reproduce the issue. If possible please include a link to a sample presentation where the bug can be tested.\n\n\n\n\nShould follow the coding style of the file you work in, most importantly:\n\nTabs to indent\nSingle-quoted strings\n\nShould be made towards the dev branch\nShould be submitted from a feature/topic branch (not your master)\n\n\n\n\nPlease do not submit plugins as pull requests. They should be maintained in their own separate repository. More information here: https://github.com/hakimel/reveal.js/wiki/Plugin-Guidelines"
+  },
+  {
+    "objectID": "cgvc2025copy/index.html#the-challenge",
+    "href": "cgvc2025copy/index.html#the-challenge",
+    "title": "Presentations",
+    "section": "The Challenge:",
+    "text": "The Challenge:\nDeveloping effective and equitable decarbonisation plans is a complex balancing act for UK local authorities.\n\n\nThey must balance:\n\nTechnical factors (Carbon reduction)\nEconomic factors (Costs, budgets)\nSocial factors (Fuel poverty, equity)\n\n\n…exacerbated by:\n\nConflicting stakeholder priorities.\nMassive, multivariate datasets.\nNo single ‘optimal’ solution.\n\n\n\nThis is a wicked problem in decision making."
   }
 ]
