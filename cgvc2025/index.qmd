@@ -47,12 +47,8 @@ format:
 
 ```{=html}
   <div style="min-height:100%; display:flex; justify-content:center; align-items:center; position: relative;">
-    <!-- <div class="logo-group-top-right">
-      <img src="../cgvc2025/assets/citystgeorgelogo.png" alt="City St George's Logo">
-      <img src="../cgvc2025/assets/giCentrelogo.webp" alt="giCentre Logo">
-      <img src="../cgvc2025/assets/ai_logo.png" alt="AI Logo">
-    </div> -->
     <div style="width:100%; text-align:center;">
+      <img src="./assets/logo.png" alt="Logo" style="width:400px; height:auto;">
       <h1>Interactive Visual Analytics for Local Decarbonisation Planning</h1>
       <p style="font-size: 1.2em;">Empowering Policy-Aligned Scenario Exploration</p>
       <hr>
@@ -279,10 +275,11 @@ Future work will focus on:
 ---
 
 
-
-## Thank You
+![](./assets/github_repo.png){height="150" fig-align="left"}
 
 <hr>
+
+### Thank You
 
 #### D. Laksono, R. Jianu, & A. Slingsby
 
@@ -295,7 +292,7 @@ Future work will focus on:
 
 giCentre, City St. George's, University of London.
 
-![Code repository](./assets/github_repo.png){height="150"}
+
 
 <!-- 
 <hr>
