@@ -60,7 +60,7 @@
     "href": "cgvc2025/index.html#the-decarbonisation-planner",
     "title": "Presentations",
     "section": "The Decarbonisation Planner",
-    "text": "The Decarbonisation Planner\n\n\n\nThe main interface integrates intervention authoring, data tables, a scenario timeline, and a glyph-map for outcome analysis.\n\n\n\n\nhttps://decarb-vis.netlify.app/"
+    "text": "The Decarbonisation Planner\n\n\n\nThe main interface integrates A) intervention authoring, B) data tables, C) a scenario timeline, and D) a glyph-map for outcome analysis.\n\n\n\n\nhttps://decarb-vis.netlify.app/"
   },
   {
     "objectID": "cgvc2025/index.html#a-workflow-for-policy-exploration",
@@ -74,7 +74,7 @@
     "href": "cgvc2025/index.html#visualising-complex-trade-offs-with-glyphs",
     "title": "Presentations",
     "section": "Visualising Complex Trade-offs with Glyphs",
-    "text": "Visualising Complex Trade-offs with Glyphs\n\n\nLeft: radial glyph for multi-attribute potential. Right: mirrored streamgraph showing Carbon Saved (green) vs. Cost (red) over time."
+    "text": "Visualising Complex Trade-offs with Glyphs\nThe glyph design replaces layered cartograms to visualise multivariate data.\n\n\n\n\n\nDecarbonisation potential and timelines are presented consistently accross different scales.\n\n\n\n\n\n\nMap view can be toggled back and forth between cartogram and regular geographic boundaries, allowing comparison."
   },
   {
     "objectID": "cgvc2025/index.html#managing-scale-analytical-clarity",
@@ -95,7 +95,7 @@
     "href": "cgvc2025/index.html#conclusion-future-work",
     "title": "Presentations",
     "section": "Conclusion & Future Work",
-    "text": "Conclusion & Future Work\nWe reframed decarbonisation planning from a rigid, monolithic process into a transparent, flexible, and iterative dialogue.\nFuture work:\n\nConduct contextual user studies\nEnhance simulation fidelity\nDevelop side-by-side scenario comparison"
+    "text": "Conclusion & Future Work\nWe reframed decarbonisation planning from a rigid, monolithic process into a transparent, flexible, and iterative dialogue.\nBased on our contextual interviews, the dashboard can be helpful\nFuture work:\n\nLLM-based user interface\nDevelop side-by-side scenario comparison\nEnhance simulation fidelity"
   },
   {
     "objectID": "cgvc2025/index.html#thank-you",

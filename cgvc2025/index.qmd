@@ -149,7 +149,7 @@ By enabling [an exploratory process with visual analytics]{.underline}, it [augm
 
 ## The Decarbonisation Planner
 
-![The main interface integrates intervention authoring, data tables, a scenario timeline, and a glyph-map for outcome analysis.](./assets/thedashboard.png)
+![The main interface integrates A) intervention authoring, B) data tables, C) a scenario timeline, and D) a glyph-map for outcome analysis.](./assets/thedashboard.png)
 
 :::{.aside}
 [https://decarb-vis.netlify.app/](https://decarb-vis.netlify.app/)
@@ -173,17 +173,18 @@ Our system supports an iterative, four-step process (T1-T4):
 
 ## Visualising Complex Trade-offs with Glyphs
 
-![](.assets/thedashboard.png){height=400}
+The glyph design replaces layered cartograms to visualise multivariate data. 
 
-<figcaption>Left: radial glyph for multi-attribute potential. Right: mirrored streamgraph showing Carbon Saved (green) vs. Cost (red) over time.</figcaption>
+:::: {.columns}
+::: {.column width="50%"}
+![Decarbonisation potential and timelines are presented consistently accross different scales.](./assets/scales.png){height="400"} 
 
----
+:::
+::: {.column width="50%"}
+![Map view can be toggled back and forth between cartogram and regular geographic boundaries, allowing comparison.](./assets/cartogram.gif){height="400"}
 
-## Managing Scale & Analytical Clarity
-
-![](https://placehold.co/800x450/E8EAF6/3F51B5?text=Figure+2:+Multi-scale+View)
-
-<figcaption>Data is represented consistently across scales. Geography can be 'squarified' to give areas equal visual prominence.</figcaption>
+:::
+::::
 
 ---
 
@@ -212,11 +213,13 @@ Our system supports an iterative, four-step process (T1-T4):
 
 We reframed decarbonisation planning from a rigid, monolithic process into a transparent, flexible, and iterative dialogue.
 
+Based on our contextual interviews, the dashboard can be helpful 
+
 Future work:
 
-1. Conduct contextual user studies
-2. Enhance simulation fidelity
-3. Develop side-by-side scenario comparison
+1. LLM-based user interface 
+2. Develop side-by-side scenario comparison
+3. Enhance simulation fidelity
 
 ---
 
