@@ -6,14 +6,17 @@ This repo is now a Quarto website for managing and publishing slide decks. Quart
 
 ### Structure
 - `_quarto.yml`: Project configuration and navbar
-- `index.qmd`: Home page with a listing of decks
-- `presentations/`: Place your `.qmd` slide decks here
-  - `_metadata.yml`: Defaults for all decks (Revealjs theme/options)
-  - `example.qmd`: Starter deck you can copy
+- `index.qmd`: Home page with a listing of top-level deck folders
+- `cgvc2025/`: A published deck. Its URL is `/presentations/cgvc2025/`.
+- `_templates/revealjs-deck/`: Starter folder to copy for a new deck
+- `_archive/`: Older experiments and single-file examples that should not be rendered
 
 ### Create a new deck
-1. Copy `presentations/example.qmd` to a new file, e.g., `presentations/my-talk.qmd`.
-2. Edit the YAML title/author/date and slide contents.
+1. Copy the template folder, e.g. `cp -R _templates/revealjs-deck cgvc2026`.
+2. Edit `cgvc2026/index.qmd`.
+3. Put images, GIFs, and other media in `cgvc2026/assets/`.
+
+This produces a deck at `/presentations/cgvc2026/` once the site is rendered and published.
 
 ### Preview and render
 Install Quarto if needed (see `https://quarto.org/docs/get-started/`). Then, from the repo root:
@@ -22,11 +25,13 @@ Install Quarto if needed (see `https://quarto.org/docs/get-started/`). Then, fro
 quarto preview
 ```
 
-To build the site to `_site/`:
+To build the site to `docs/`:
 
 ```bash
 quarto render
 ```
 
 ### Notes
-- Deck defaults (theme, slide numbers, etc.) are set in `presentations/_metadata.yml` and apply to all decks in that folder.
+- The home page lists top-level `*/index.qmd` decks.
+- Keep complete talks in their own top-level folders so each talk can carry its own assets and CSS.
+- Older single-file deck examples were moved to `_archive/single-file-decks/`.

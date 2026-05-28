@@ -1,10 +1,15 @@
 ---
-# title: "Interactive Visual Analytics for Local Decarbonisation Planning"
-# subtitle: "Empowering Policy-Aligned Scenario Exploration"
-# author:  "Dany Laksono, Radu Jianu, & Aidan Slingsby"
+title: "Interactive Visual Analytics for Local Decarbonisation Planning"
+subtitle: "Empowering Policy-Aligned Scenario Exploration"
+author: "Dany Laksono, Radu Jianu, & Aidan Slingsby"
+date: "2025-09-12"
+description: "A CGVC 2025 presentation on exploratory visual analytics for local decarbonisation planning."
+categories: [cgvc, visual analytics, decarbonisation]
 format:
   revealjs:
     theme: simple
+    title-slide-attributes:
+      data-visibility: hidden
    #  logo: "../cgvc2025/assets/citystgeorgelogo.png"
     css: styles.css
     include-in-header:
@@ -326,4 +331,3 @@ giCentre, City St. George's, University of London.
 - Augments the decision-maker, does not automate the decision
 :::
 ::::
-

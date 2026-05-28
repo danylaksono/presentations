@@ -1,0 +1,14 @@
+.reveal {
+  font-family: "Inter", "Source Sans Pro", Arial, sans-serif;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3 {
+  font-weight: 700;
+}
+
+.reveal p,
+.reveal li {
+  line-height: 1.35;
+}

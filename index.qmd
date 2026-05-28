@@ -1,13 +1,14 @@
 ---
 title: "Presentations"
 listing:
-  contents: presentations
+  contents:
+    - "*/index.qmd"
   type: table
   sort: "date desc"
   fields: [title, date, categories, description]
 ---
 
-Welcome! This site hosts slide decks built with Quarto Revealjs. See the table above for available decks.
+Welcome! This site hosts slide decks built with Quarto RevealJS. See the table above for available decks.
 
-To add a new deck, create a new `.qmd` file under `presentations/` (you can copy `presentations/example.qmd`).
+To add a new deck, copy `_templates/revealjs-deck/` to a top-level folder such as `cgvc2026/`, then edit `index.qmd`.
 
