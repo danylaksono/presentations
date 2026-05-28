@@ -1,6 +1,9 @@
 project:
   type: website
   output-dir: docs
+  render:
+    - index.qmd
+    - "*/index.qmd"
   preview: 
     port: 4200
   resources:
@@ -12,8 +15,6 @@ website:
   #   left:
   #     - text: "Home"
   #       href: index.qmd
-  #     - text: "Presentations"
-  #       href: presentations/index.qmd
 
 format:
   html:
