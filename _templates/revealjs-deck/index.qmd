@@ -1,0 +1,42 @@
+---
+title: "Presentation Title"
+subtitle: "Optional subtitle"
+author: "Dany Laksono"
+date: "2026-05-28"
+description: "Short description for the presentations index."
+categories: [presentation]
+format:
+  revealjs:
+    theme: simple
+    slide-number: c/t
+    controls: true
+    progress: true
+    transition: slide
+    background-transition: fade
+    incremental: false
+    width: 1280
+    height: 720
+    css: styles.css
+---
+
+## Opening
+
+- First point
+- Second point
+- Third point
+
+---
+
+## Add Assets
+
+Place images, GIFs, and other media in `assets/`, then reference them like this:
+
+```markdown
+![](./assets/example.png)
+```
+
+---
+
+## Closing
+
+Your final slide goes here.
